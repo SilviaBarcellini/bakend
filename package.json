@@ -15,7 +15,7 @@
     "test": "npm run eslint && npm run stylelint && npm run prettycheck && npm run typecheck",
     "storybook": "start-storybook -p 6006",
     "build-next": "next build",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -s public",
     "build-server": "tsc --project tsconfig.server.json"
   },
   "dependencies": {
