@@ -1,9 +1,10 @@
 .btn {
   min-width: 10rem;
   min-height: 3rem;
+  color: whitesmoke;
   background-color: hotpink;
   border: none;
   border-radius: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: bolder 2rem;
 }

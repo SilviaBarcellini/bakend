@@ -1,4 +1,4 @@
-import styles from "./btn.stories";
+import styles from "./btn.module.css";
 
 export type BtnProps = {
   label: string;
