@@ -1,8 +1,8 @@
 .btn {
   min-width: 10rem;
   min-height: 3rem;
-  color: whitesmoke;
-  background-color: hotpink;
+  color: var(--button-color);
+  background-color: var(--button-background-color);
   border: none;
   border-radius: 10px;
   font-family: "Paytone One", sans-serif;
