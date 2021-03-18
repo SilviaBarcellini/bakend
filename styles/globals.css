@@ -11,6 +11,17 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --background-color: #e6ffff;
+  --button-background-color: #f723ff;
+  --button-color: #effeff;
+  --placeholder-background-color: #ffedfa;
+  --placeholder-active-color: #3c3433;
+  --placeholder-default-color: #aa9aa4;
+  --primary-color: #ff00a7;
+  --secondary-color: #7406c4;
+  --selected-card-color: #000aff;
+}
 * {
   box-sizing: border-box;
 }
