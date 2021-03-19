@@ -1,3 +1,5 @@
 .greetings {
   color: var(--primary-color);
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
 }
