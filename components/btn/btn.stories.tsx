@@ -23,3 +23,8 @@ export const go = Template.bind({});
 go.args = {
   label: "Go!",
 };
+
+export const confirm = Template.bind({});
+confirm.args = {
+  label: "Confirm",
+};
