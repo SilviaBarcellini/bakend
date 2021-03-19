@@ -9,12 +9,17 @@ export default {
 
 const Template: Story<BtnProps> = (args) => <Btn {...args} />;
 
-export const Calculate = Template.bind({});
-Calculate.args = {
+export const calculate = Template.bind({});
+calculate.args = {
   label: "Calculate >>>",
 };
 
-export const Add = Template.bind({});
-Add.args = {
+export const add = Template.bind({});
+add.args = {
   label: "Add 💚",
+};
+
+export const go = Template.bind({});
+go.args = {
+  label: "Go!",
 };
