@@ -20,6 +20,7 @@ export default function Home() {
       <div>
         <Greetings />
         <Btn label="Go!" />
+        <HomeBtn />
       </div>
     </div>
   );
