@@ -1,9 +1,5 @@
 import styles from "./homeBtn.module.css";
 
-const homeImg = (home) => {
-  return require(`./${home}`);
-};
-
 function HomeBtn() {
   return (
     <a className={styles.homeBtn} href="http://localhost:3000/">
