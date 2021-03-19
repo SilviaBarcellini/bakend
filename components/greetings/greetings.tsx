@@ -1,11 +1,8 @@
+import React from "react";
 import styles from "./greetings.module.css";
 
-type GreetingsProps = {
-  greetings: string;
-};
-
-function Greetings(greetings, ...props) {
-  return <p className={styles.greetings}>{greetings}</p>;
+function Greetings() {
+  return <h2 className={styles.greetings}>Hello Joan!</h2>;
 }
 
 export default Greetings;
