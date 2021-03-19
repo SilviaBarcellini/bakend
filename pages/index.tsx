@@ -23,7 +23,7 @@ export default function Home() {
         <Btn label="Go!" />
       </div>
       <footer>
-        <HomeBtn />
+        <HomeBtn src="" />
         <FavsBtn />
       </footer>
     </div>

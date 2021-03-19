@@ -6,7 +6,7 @@ export type HomeBtnProps = {
   src: string;
 };
 
-function HomeBtn({ src, ...props }: HomeBtnProps) {
+function HomeBtn({ ...props }: HomeBtnProps) {
   return (
     <a href="http://localhost:3000/">
       <img
