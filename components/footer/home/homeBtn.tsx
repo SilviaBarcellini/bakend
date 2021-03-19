@@ -1,5 +1,5 @@
 import styles from "./homeBtn.module.css";
-import homeBtn from "./home.png";
+
 import homeImg from "./homeBtn.stories";
 
 export type HomeBtnProps = {

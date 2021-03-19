@@ -1,4 +1,5 @@
 import styles from "./favsBtn.module.css";
+import FavsImg from "./favsBtn.stories";
 
 function FavsBtn() {
   return (
