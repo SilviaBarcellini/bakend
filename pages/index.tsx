@@ -4,6 +4,7 @@ import Btn from "../components/btn/btn";
 import Greetings from "../components/greetings/greetings";
 import styles from "../styles/Home.module.css";
 import HomeBtn from "../components/footer/home/homeBtn";
+import FavsBtn from "../components/footer/favs/favsBtn";
 
 export default function Home() {
   return (
@@ -20,8 +21,11 @@ export default function Home() {
       <div>
         <Greetings />
         <Btn label="Go!" />
-        <HomeBtn />
       </div>
+      <footer>
+        <HomeBtn />
+        <FavsBtn />
+      </footer>
     </div>
   );
 }
