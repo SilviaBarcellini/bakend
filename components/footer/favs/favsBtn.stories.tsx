@@ -1,16 +1,16 @@
 import React from "react";
-/* import { Story, Meta } from "@storybook/react/types-6-0";
-import favsBtn from "./favs.png";
+import { Story, Meta } from "@storybook/react/types-6-0";
+import FavsIcon, { FavsIconProps } from "./favsBtn";
 
 export default {
-  title: "favsBtn",
-  component: favsBtn,
+  title: "Common/favsIcon",
+  component: FavsIcon,
 } as Meta;
 
-const image = {
-  src: favsBtn,
-  alt: "add-to-favs",
-};
+const Template: Story<FavsIconProps> = (args) => <FavsIcon {...args} />;
 
-export const favsImg = () => <img src={image.src} alt={image.alt} />;
- */
+export const favsIcon = Template.bind({});
+favsIcon.args = {
+  imgSrc:
+    "https://www.flaticon.com/svg/vstatic/svg/535/535234.svg?token=exp=1616181165~hmac=c49e0ab0e50bb652f6d47a7ba840fc0c",
+};
