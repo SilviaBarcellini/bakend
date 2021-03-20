@@ -10,7 +10,7 @@ function Card({ title, image, ...props }: CardProps) {
     <div className={styles.card}>
       <h2 className={styles.title} {...props}>
         {title}
-        <img src={image} alt="" />
+        <img className={styles.image} src={image} alt="" />
       </h2>
     </div>
   );
