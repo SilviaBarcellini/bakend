@@ -8,21 +8,23 @@ import FavsBtn from "../components/footer/favs/favsBtn";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div>
+      <div className={styles.container}>
+        <Head>
+          <title>Create Next App</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <main className={styles.main}>
-        <Button primary label="Primary" />
-        <Button primary={false} label="Secondary" />
-      </main>
-      <div>
-        <Greetings />
-        <Btn label="Go!" />
+        <main className={styles.main}>
+          <Button primary label="Primary" />
+          <Button primary={false} label="Secondary" />
+        </main>
+        <div>
+          <Greetings />
+          <Btn label="Go!" />
+        </div>
       </div>
-      <footer>
+      <footer className={styles.footer}>
         <HomeBtn src="" />
         <FavsBtn />
       </footer>

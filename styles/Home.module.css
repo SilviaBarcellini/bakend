@@ -15,3 +15,13 @@
   justify-content: center;
   align-items: center;
 }
+
+.footer {
+  background-color: #9ff4ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 1rem;
+}
