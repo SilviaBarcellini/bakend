@@ -8,9 +8,9 @@ export type CardProps = {
 function Card({ title, image, ...props }: CardProps) {
   return (
     <div className={styles.card}>
+      <img className={styles.image} src={image} alt="" />
       <h2 className={styles.title} {...props}>
         {title}
-        <img className={styles.image} src={image} alt="" />
       </h2>
     </div>
   );
