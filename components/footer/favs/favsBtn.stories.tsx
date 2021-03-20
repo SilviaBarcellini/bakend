@@ -1,5 +1,5 @@
 import React from "react";
-import { Story, Meta } from "@storybook/react/types-6-0";
+/* import { Story, Meta } from "@storybook/react/types-6-0";
 import favsBtn from "./favs.png";
 
 export default {
@@ -13,3 +13,4 @@ const image = {
 };
 
 export const favsImg = () => <img src={image.src} alt={image.alt} />;
+ */

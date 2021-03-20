@@ -1,5 +1,5 @@
 import React from "react";
-import { Story, Meta } from "@storybook/react/types-6-0";
+/* import { Story, Meta } from "@storybook/react/types-6-0";
 import { HomeBtnProps } from "./homeBtn";
 import homeBtn from "./home.png";
 
@@ -14,3 +14,4 @@ const image = {
 };
 
 export const homeImg = () => <img src={image.src} alt={image.alt} />;
+ */

@@ -1,6 +1,6 @@
 import styles from "./homeBtn.module.css";
 
-import homeImg from "./homeBtn.stories";
+/* import homeImg from "./homeBtn.stories"; */
 
 export type HomeBtnProps = {
   src: string;
