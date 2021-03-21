@@ -1,4 +1,5 @@
 import styles from "./header.module.css";
+import Logo from "../logo/logo";
 
 export type HeaderProps = {
   logo: string;
