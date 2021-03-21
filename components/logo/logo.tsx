@@ -2,16 +2,13 @@ import styles from "./logo.module.css";
 
 export type LogoProps = {
   logo: string;
-  header: boolean;
+  size: string;
 };
 
-function Logo({ logo, header, ...props }: LogoProps) {
+function Logo({ logo, size, ...props }: LogoProps) {
   return (
     <div>
-      <h1
-        className={`${styles.logo} ${header ? styles.header : ""}`}
-        {...props}
-      >
+      <h1 className={`${styles.logo} ${styles[size]}`} {...props}>
         {logo}
       </h1>
     </div>
