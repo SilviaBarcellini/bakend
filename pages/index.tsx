@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Header
-        logo="header"
+        logo="bakend"
         imageSrc="https://image.flaticon.com/icons/png/128/3190/3190845.png"
       />
       <div>
