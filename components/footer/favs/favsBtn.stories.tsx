@@ -11,6 +11,5 @@ const Template: Story<FavsIconProps> = (args) => <FavsIcon {...args} />;
 
 export const favsIcon = Template.bind({});
 favsIcon.args = {
-  imgSrc:
-    "https://www.flaticon.com/svg/vstatic/svg/535/535234.svg?token=exp=1616181165~hmac=c49e0ab0e50bb652f6d47a7ba840fc0c",
+  imgSrc: "https://image.flaticon.com/icons/png/128/535/535234.png",
 };
