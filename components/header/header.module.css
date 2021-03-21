@@ -1,3 +1,19 @@
-header {
-  background-color: plum;
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.5rem;
+}
+
+.logo {
+  font-family: "Shadows Into Light", cursive;
+  color: var(--primary-color);
+  font-size: 4rem;
+  margin: 0;
+}
+
+.donut {
+  max-width: 6rem;
 }
