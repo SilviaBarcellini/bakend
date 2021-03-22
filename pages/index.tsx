@@ -11,8 +11,8 @@ export default function Home() {
     <div>
       <Header
         logo="bakend"
-        imageSrc="https://image.flaticon.com/icons/png/128/3190/3190845.png"
-        //imageSrc="/donut.svg"
+        //imageSrc="https://image.flaticon.com/icons/png/128/3190/3190845.png"
+        imageSrc="/donuts.svg"
       />
       <div>
         <div className={styles.container}>

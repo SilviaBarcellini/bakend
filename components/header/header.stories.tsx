@@ -13,6 +13,6 @@ const Template: Story<HeaderProps> = (args) => <Header {...args} />;
 export const header = Template.bind({});
 header.args = {
   logo: "bakend",
-  imageSrc: "https://image.flaticon.com/icons/png/128/3190/3190845.png",
-  //imageSrc: "/donut.svg",
+  //imageSrc: "https://image.flaticon.com/icons/png/128/3190/3190845.png",
+  imageSrc: "/donuts.svg",
 };
