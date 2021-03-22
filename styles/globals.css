@@ -18,9 +18,9 @@ a {
 
 :root {
   --background-color: #e6ffff;
-  --button-background-color: #f723ff;
-  --button-color: #effeff;
-  --placeholder-background-color: #ffedfa;
+  --button-BG-main: #f723ff;
+  --button-main: #effeff;
+  --placeholder-BG-color: #ffedfa;
   --placeholder-active-color: #3c3433;
   --placeholder-default-color: #aa9aa4;
   --primary-color: #ff00a7;
