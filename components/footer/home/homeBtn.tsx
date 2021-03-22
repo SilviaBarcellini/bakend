@@ -8,7 +8,7 @@ export type HomeBtnProps = {
 
 function HomeBtn({ ...props }: HomeBtnProps) {
   return (
-    <a href="http://localhost:3000/">
+    <a href="#">
       <img
         className={styles.homeBtn}
         {...props}
