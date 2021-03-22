@@ -1,0 +1,23 @@
+.btn {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: var(--button-color);
+  background-image: linear-gradient(
+    to right,
+    #f723ff 0%,
+    #fb23cd 51%,
+    #fb23cd 100%
+  );
+  box-shadow: 0 0 20px rgb(173, 252, 255);
+  border: 1px solid;
+  border-radius: 20px;
+  font-family: "Paytone One", sans-serif;
+  font-size: 1.3rem;
+}
+
+.btn:hover {
+  background-position: right center;
+}

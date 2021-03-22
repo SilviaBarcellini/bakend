@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@900&family=Paytone+One&family=Quicksand&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif,
+    Quicksand, Paytone One;
 }
 
 a {
@@ -11,6 +14,18 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --background-color: #e6ffff;
+  --button-background-color: #f723ff;
+  --button-color: #effeff;
+  --placeholder-background-color: #ffedfa;
+  --placeholder-active-color: #3c3433;
+  --placeholder-default-color: #aa9aa4;
+  --primary-color: #ff00a7;
+  --secondary-color: #7406c4;
+  --selected-card-color: #000aff;
+  --card-background-color: #362f2f;
+}
 * {
   box-sizing: border-box;
 }
