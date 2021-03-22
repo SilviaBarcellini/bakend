@@ -31,12 +31,7 @@ export default function Home() {
           </div>
         </div>
         <footer className={styles.footer}>
-          <Footer
-            homeIcon="/home.svg"
-            //homeIcon="https://image.flaticon.com/icons/png/128/1946/1946436.png"
-            favsIcon="/heartf.svg"
-            //favsIcon="https://image.flaticon.com/icons/png/128/535/535234.png"
-          />
+          <Footer homeIcon="/home.svg" favsIcon="/heartf.svg" />
         </footer>
       </div>
     </div>
