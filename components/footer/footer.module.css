@@ -1,0 +1,22 @@
+.footer {
+  background-color: #9ff4ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 1rem;
+  max-height: 4.5rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.home {
+  width: 3rem;
+  height: 3rem;
+}
+
+.favs {
+  width: 3rem;
+  height: 3rem;
+}
