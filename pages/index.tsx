@@ -29,7 +29,12 @@ export default function Home() {
             <Btn label="Go!" />
           </div>
         </div>
-        <footer className={styles.footer}></footer>
+        <footer className={styles.footer}>
+          <Footer
+            homeIcon="https://image.flaticon.com/icons/png/128/1946/1946436.png"
+            favsIcon="https://image.flaticon.com/icons/png/128/535/535234.png"
+          />
+        </footer>
       </div>
     </div>
   );
