@@ -4,7 +4,7 @@ export type FavsIconProps = {
   imgSrc: string;
 };
 
-function FavsIcon({ imgSrc, ...props }: FavsIconProps) {
+function FavsIcon({ imgSrc }: FavsIconProps) {
   return (
     <a href="http://localhost:3000/">
       <img className={styles.icon} src={imgSrc} />
