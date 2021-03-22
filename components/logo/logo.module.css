@@ -1,0 +1,11 @@
+.logo {
+  font-family: "Shadows Into Light", cursive;
+  color: var(--primary-color);
+}
+.small {
+  font-size: 4rem;
+}
+
+.big {
+  font-size: 8rem;
+}

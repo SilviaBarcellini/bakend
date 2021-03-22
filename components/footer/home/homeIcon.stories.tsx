@@ -1,9 +1,8 @@
-import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import HomeIcon, { HomeIconProps } from "./homeBtn";
+import HomeIcon, { HomeIconProps } from "./homeIcon";
 
 export default {
-  title: "Common/homeIcon",
+  title: "Common/HomeIcon",
   component: HomeIcon,
 } as Meta;
 

@@ -1,5 +1,5 @@
 import { Story, Meta } from "@storybook/react/types-6-0";
-import FavsIcon, { FavsIconProps } from "./favsBtn";
+import FavsIcon, { FavsIconProps } from "./favsIcon";
 
 export default {
   title: "Common/favsIcon",

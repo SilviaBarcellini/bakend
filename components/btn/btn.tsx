@@ -4,12 +4,8 @@ export type BtnProps = {
   label: string;
 };
 
-function Btn({ label, ...props }: BtnProps) {
-  return (
-    <button className={styles.btn} {...props}>
-      {label}
-    </button>
-  );
+function Btn({ label }: BtnProps) {
+  return <button className={styles.btn}>{label}</button>;
 }
 
 export default Btn;
