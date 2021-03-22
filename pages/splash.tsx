@@ -1,4 +1,3 @@
-import Logo from "../components/logo/logo";
 import styles from "../styles/Splash.module.css";
 
 export default function SplashPage() {
