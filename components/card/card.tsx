@@ -5,13 +5,11 @@ export type CardProps = {
   image: string;
 };
 
-function Card({ title, image, ...props }: CardProps) {
+function Card({ title, image }: CardProps) {
   return (
     <div className={styles.card}>
       <img className={styles.image} src={image} alt="" />
-      <h2 className={styles.title} {...props}>
-        {title}
-      </h2>
+      <h2 className={styles.title}>{title}</h2>
     </div>
   );
 }
