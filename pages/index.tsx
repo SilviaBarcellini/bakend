@@ -3,9 +3,8 @@ import Button from "../components/button/Button";
 import Btn from "../components/btn/btn";
 import Greetings from "../components/greetings/greetings";
 import styles from "../styles/Home.module.css";
-import HomeBtn from "../components/footer/home/homeBtn";
-import FavsBtn from "../components/footer/favs/favsBtn";
-import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
+
 
 export default function Home() {
   return (
@@ -35,6 +34,10 @@ export default function Home() {
           <FavsBtn />
         </footer>
       </div>
+      <Footer
+        homeBtn="https://image.flaticon.com/icons/png/128/535/535234.png"
+        favsBtn="https://image.flaticon.com/icons/png/128/1946/1946436.png"
+      />
     </div>
   );
 }

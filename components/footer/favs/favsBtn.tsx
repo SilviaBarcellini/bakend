@@ -1,7 +1,10 @@
 import styles from "./favsBtn.module.css";
-/* import FavsImg from "./favsBtn.stories"; */
 
-function FavsBtn() {
+export type FavsIconProps = {
+  imgSrc: string;
+};
+
+function FavsIcon({ imgSrc }: FavsIconProps) {
   return (
     <a href="#">
       <img
@@ -12,4 +15,4 @@ function FavsBtn() {
   );
 }
 
-export default FavsBtn;
+export default FavsIcon;

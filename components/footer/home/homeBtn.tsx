@@ -1,13 +1,12 @@
 import styles from "./homeBtn.module.css";
 
-/* import homeImg from "./homeBtn.stories"; */
-
-export type HomeBtnProps = {
-  src: string;
+export type HomeIconProps = {
+  imgSrc: string;
 };
 
-function HomeBtn({ ...props }: HomeBtnProps) {
+function HomeIcon({ imgSrc, ...props }: HomeIconProps) {
   return (
+    
     <a href="#">
       <img
         className={styles.homeBtn}
@@ -19,4 +18,4 @@ function HomeBtn({ ...props }: HomeBtnProps) {
   );
 }
 
-export default HomeBtn;
+export default HomeIcon;

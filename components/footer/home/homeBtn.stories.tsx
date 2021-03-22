@@ -1,17 +1,15 @@
 import React from "react";
-/* import { Story, Meta } from "@storybook/react/types-6-0";
-import { HomeBtnProps } from "./homeBtn";
-import homeBtn from "./home.png";
+import { Story, Meta } from "@storybook/react/types-6-0";
+import HomeIcon, { HomeIconProps } from "./homeBtn";
 
 export default {
-  title: "homeBtn",
-  component: homeBtn,
+  title: "Common/homeIcon",
+  component: HomeIcon,
 } as Meta;
 
-const image = {
-  src: homeBtn,
-  alt: "take-me-home",
-};
+const Template: Story<HomeIconProps> = (args) => <HomeIcon {...args} />;
 
-export const homeImg = () => <img src={image.src} alt={image.alt} />;
- */
+export const homeIcon = Template.bind({});
+homeIcon.args = {
+  imgSrc: "https://image.flaticon.com/icons/png/128/1946/1946436.png",
+};
