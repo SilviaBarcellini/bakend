@@ -10,5 +10,5 @@ const Template: Story<HomeIconProps> = (args) => <HomeIcon {...args} />;
 
 export const homeIcon = Template.bind({});
 homeIcon.args = {
-  imgSrc: "https://image.flaticon.com/icons/png/128/1946/1946436.png",
+  imgSrc: "/home.svg",
 };
