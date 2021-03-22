@@ -5,12 +5,10 @@ export type LogoProps = {
   size: string;
 };
 
-function Logo({ logo, size, ...props }: LogoProps) {
+function Logo({ logo, size }: LogoProps) {
   return (
     <div>
-      <h1 className={`${styles.logo} ${styles[size]}`} {...props}>
-        {logo}
-      </h1>
+      <h1 className={`${styles.logo} ${styles[size]}`}>{logo}</h1>
     </div>
   );
 }
