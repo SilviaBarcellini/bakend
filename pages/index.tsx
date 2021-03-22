@@ -32,8 +32,10 @@ export default function Home() {
         </div>
         <footer className={styles.footer}>
           <Footer
-            homeIcon="https://image.flaticon.com/icons/png/128/1946/1946436.png"
-            favsIcon="https://image.flaticon.com/icons/png/128/535/535234.png"
+            homeIcon="/home.svg"
+            //homeIcon="https://image.flaticon.com/icons/png/128/1946/1946436.png"
+            favsIcon="/heartf.svg"
+            //favsIcon="https://image.flaticon.com/icons/png/128/535/535234.png"
           />
         </footer>
       </div>

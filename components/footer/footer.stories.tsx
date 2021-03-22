@@ -11,6 +11,8 @@ const Template: Story<FooterProps> = (args) => <Footer {...args} />;
 
 export const footer = Template.bind({});
 footer.args = {
-  homeIcon: "https://image.flaticon.com/icons/png/128/1946/1946436.png",
-  favsIcon: "https://image.flaticon.com/icons/png/128/535/535234.png",
+  //homeIcon: "https://image.flaticon.com/icons/png/128/1946/1946436.png",
+  homeIcon: "home.svg",
+  //favsIcon: "https://image.flaticon.com/icons/png/128/535/535234.png",
+  favsIcon: "/heartf.svg",
 };
