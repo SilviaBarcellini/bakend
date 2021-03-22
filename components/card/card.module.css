@@ -1,0 +1,31 @@
+.card {
+  max-width: 40%;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  transition: 0.2s;
+  border: 3px solid #ff00a7;
+  border-radius: 30%;
+}
+
+.card:hover {
+  border: 3px solid #6a00ff;
+}
+
+.image {
+  max-width: 50%;
+}
+
+.title {
+  color: var(--secondary-color);
+  font-size: 1.125rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.title:hover {
+  color: #5d00df;
+}
