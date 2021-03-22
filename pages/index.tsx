@@ -3,8 +3,6 @@ import Button from "../components/button/Button";
 import Btn from "../components/btn/btn";
 import Greetings from "../components/greetings/greetings";
 import styles from "../styles/Home.module.css";
-import HomeBtn from "../components/footer/home/homeIcon";
-import FavsBtn from "../components/footer/favs/favsIcon";
 import Header from "../components/header/header";
 
 export default function Home() {
@@ -30,10 +28,7 @@ export default function Home() {
             <Btn label="Go!" />
           </div>
         </div>
-        <footer className={styles.footer}>
-          <HomeBtn src="" />
-          <FavsBtn />
-        </footer>
+        <footer className={styles.footer}></footer>
       </div>
     </div>
   );
