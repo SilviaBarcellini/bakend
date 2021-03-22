@@ -1,4 +1,4 @@
-import styles from "./favsBtn.module.css";
+import styles from "./favsIcon.module.css";
 
 export type FavsIconProps = {
   imgSrc: string;
@@ -6,7 +6,7 @@ export type FavsIconProps = {
 
 function FavsIcon({ imgSrc }: FavsIconProps) {
   return (
-    <a href="http://localhost:3000/">
+    <a href="#">
       <img className={styles.icon} src={imgSrc} />
     </a>
   );
