@@ -8,8 +8,12 @@ export type FooterProps = {
 function Footer({ favsIcon, homeIcon }: FooterProps) {
   return (
     <footer className={styles.footer}>
-      <img className={styles.favs} src={favsIcon} alt="heart" />
-      <img className={styles.home} src={homeIcon} alt="home" />
+      <a href="#">
+        <img className={styles.favs} src={favsIcon} alt="heart" />
+      </a>
+      <a href="#">
+        <img className={styles.home} src={homeIcon} alt="home" />
+      </a>
     </footer>
   );
 }
