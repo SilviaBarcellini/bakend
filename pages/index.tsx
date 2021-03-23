@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.css";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import OpenNewPage from "../components/openNewPage/openNewPage";
+import Input from "../components/input/input";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
           </main>
           <div>
             <Greetings />
+            <Input placeholder="Today I am out of ..." />
             <Btn label="Go!" />
           </div>
         </div>
