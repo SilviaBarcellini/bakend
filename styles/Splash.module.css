@@ -1,3 +1,13 @@
-.main {
-  background-color: blue;
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50%;
+  margin: 0;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
 }
