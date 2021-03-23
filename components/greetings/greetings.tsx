@@ -4,9 +4,7 @@ import styles from "./greetings.module.css";
 function Greetings() {
   const [greeting, setGreeting] = useState(null);
   useEffect(() => {
-    const date = new Date();
-    const currentTime = date.getHours();
-
+    const currentTime = new Date().getHours();
     if (currentTime < 12) {
       setGreeting("Good Morning");
     } else if (currentTime < 18) {
