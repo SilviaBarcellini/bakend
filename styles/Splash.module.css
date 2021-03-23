@@ -3,11 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50%;
+  padding: 20%;
   margin: 0;
 }
 
 .link {
-  display: flex;
-  justify-content: center;
+  color: var(--secondary-color);
+  font-family: Poppins, sans-serif;
 }
