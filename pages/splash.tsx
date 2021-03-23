@@ -8,7 +8,7 @@ export default function SplashPage() {
         <Logo logo="bakend" size="big" />
       </div>
       <div>
-        <a className={styles.link} href="http://localhost:3000">
+        <a className={styles.link} href="/">
           Press here to continue
         </a>
       </div>
