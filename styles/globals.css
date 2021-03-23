@@ -4,6 +4,7 @@
 
 html,
 body {
+  background: var(--background-color);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -17,7 +18,7 @@ a {
 }
 
 :root {
-  --background-color: #e6ffff;
+  --background-color: #d1ffff;
   --button-BG-main: #f723ff;
   --button-main: #effeff;
   --placeholder-BG-color: #ffedfa;
