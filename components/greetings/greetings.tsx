@@ -18,7 +18,7 @@ function Greetings() {
     }
   }, []);
 
-  return <h2 className={styles.greetings}>{greeting} Joan!</h2>;
+  return <h2 className={styles.greetings}>Hey There, {greeting}!</h2>;
 }
 
 export default Greetings;
