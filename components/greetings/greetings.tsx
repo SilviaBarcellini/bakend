@@ -1,23 +1,22 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import styles from "./greetings.module.css";
 
-const date = new Date();
-const currentTime = date.getHours();
-
-let greetings;
-
-if (currentTime < 12) {
-  greetings = "Good Morning";
-} else if (currentTime < 18) {
-  greetings = "Good Afternoon";
-} else if (currentTime < 22) {
-  greetings = "Good Evening";
-} else {
-  greetings = "Good Night";
-}
-
 function Greetings() {
-  return <h2 className={styles.greetings}>{greetings} Joan!</h2>;
+  const [greeting, setGreeting] = useState(null);
+  useEffect(() => {
+    const currentTime = new Date().getHours();
+    if (currentTime < 12) {
+      setGreeting("Good Morning");
+    } else if (currentTime < 18) {
+      setGreeting("Good Afternoon");
+    } else if (currentTime < 22) {
+      setGreeting("Good Evening");
+    } else {
+      setGreeting("Good Night");
+    }
+  }, []);
+
+  return <h2 className={styles.greetings}>Hey There, {greeting}!</h2>;
 }
 
 export default Greetings;
