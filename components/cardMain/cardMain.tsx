@@ -53,19 +53,19 @@ function CardMain({
       </div>
       <div className={styles.dietContainer}>
         <h4 className={styles.dietFact}>Vegan</h4>
-        <p>{vegan}</p>
+        <p>{vegan === "yes" ? "💚 " : "💔"}</p>
         <h4 className={styles.dietFact}>Vegetarian</h4>
-        <p>{vegetarian}</p>
+        <p>{vegetarian === "yes" ? "💚 " : "💔"}</p>
       </div>
       <div className={styles.allergensContainer}>
         <h4 className={styles.Allergen}>Gluten Free</h4>
-        <p>{glutenFree}</p>
+        <p>{glutenFree === "yes" ? "💚 " : "💔"}</p>
         <h4 className={styles.Allergen}>Dairy Free</h4>
-        <p>{dairyFree}</p>
+        <p>{dairyFree === "yes" ? "💚 " : "💔"}</p>
         <h4 className={styles.Allergen}>Nuts Free</h4>
-        <p>{nutsFree}</p>
+        <p>{nutsFree === "yes" ? "💚 " : "💔"}</p>
         <h4 className={styles.Allergen}>Soy Free</h4>
-        <p>{soyFree}</p>
+        <p>{soyFree === "yes" ? "💚 " : "💔"}</p>
       </div>
     </div>
   );
