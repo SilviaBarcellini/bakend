@@ -59,20 +59,42 @@ function CardMain({
         <h3>{family}</h3>
       </div>
       <div className={styles.dietContainer}>
-        <h4 className={styles.dietFact}>Vegan</h4>
-        <p>{vegan === "yes" ? "💚 " : "💔"}</p>
-        <h4 className={styles.dietFact}>Vegetarian</h4>
-        <p>{vegetarian === "yes" ? "💚 " : "💔"}</p>
+        <h4 className={styles.diet}>
+          <span className={styles.span}>{vegan === "yes" ? "💚 " : "💔"}</span>
+          Vegan
+        </h4>
+        <h4 className={styles.diet}>
+          <span className={styles.span}>
+            {vegetarian === "yes" ? "💚 " : "💔"}
+          </span>
+          Vegetarian
+        </h4>
       </div>
       <div className={styles.allergensContainer}>
-        <h4 className={styles.Allergen}>Gluten Free</h4>
-        <p>{glutenFree === "yes" ? "💚 " : "💔"}</p>
-        <h4 className={styles.Allergen}>Dairy Free</h4>
-        <p>{dairyFree === "yes" ? "💚 " : "💔"}</p>
-        <h4 className={styles.Allergen}>Nuts Free</h4>
-        <p>{nutsFree === "yes" ? "💚 " : "💔"}</p>
-        <h4 className={styles.Allergen}>Soy Free</h4>
-        <p>{soyFree === "yes" ? "💚 " : "💔"}</p>
+        <h4 className={styles.gluten}>
+          <span className={styles.span}>
+            {glutenFree === "yes" ? "💚 " : "💔"}
+          </span>
+          Gluten Free
+        </h4>
+        <h4 className={styles.dairy}>
+          <span className={styles.span}>
+            {dairyFree === "yes" ? "💚 " : "💔"}
+          </span>
+          Dairy Free
+        </h4>
+        <h4 className={styles.nuts}>
+          <span className={styles.span}>
+            {nutsFree === "yes" ? "💚 " : "💔"}
+          </span>
+          Nuts Free
+        </h4>
+        <h4 className={styles.soy}>
+          <span className={styles.span}>
+            {soyFree === "yes" ? "💚 " : "💔"}
+          </span>
+          Soy Free
+        </h4>
       </div>
     </div>
   );
