@@ -1,36 +1,11 @@
-export type APIIngredient = {
-  id: number;
-  image: string;
-  name: string;
-  fat: number;
-  carbs: number;
-  protein: number;
-  family: "Sugar" | "Amids" | "Liquids" | "else";
-  vegan: string;
-  vegetarian: string;
-  glutenFree: string;
-  dairyFree: string;
-  nutsFree: string;
-  soyFree: string;
-};
-
-export type APIIngredients = {
-  info: {
-    count: number;
-    pages: number;
-    next: string;
-    prev: string | null;
-  };
-  results: APIIngredients[];
-};
-
 export type Ingredient = {
-  image: string;
+  _id: string;
   name: string;
-  family: "Sugar" | "Amids" | "Liquids" | "else";
+  img: string;
   fat: number;
   carbs: number;
   protein: number;
+  family: "Sugars" | "Amids" | "Liquids" | "else";
   vegan: string;
   vegetarian: string;
   glutenFree: string;
@@ -39,35 +14,16 @@ export type Ingredient = {
   soyFree: string;
 };
 
-function convertToCard(apiIngredient: APIIngredient): Ingredient {
-  return {
-    name: apiIngredient.name,
-    image: apiIngredient.image,
-    family: apiIngredient.family,
-    fat: apiIngredient.fat,
-    carbs: apiIngredient.carbs,
-    protein: apiIngredient.protein,
-    vegan: apiIngredient.vegan,
-    vegetarian: apiIngredient.vegetarian,
-    glutenFree: apiIngredient.glutenFree,
-    dairyFree: apiIngredient.dairyFree,
-    nutsFree: apiIngredient.nutsFree,
-    soyFree: apiIngredient.soyFree,
-  };
+export async function getIngredient(name: string): Promise<Ingredient> {
+  const response = await fetch(`/api/ingredients/${name}`);
+
+  const ingredient = await response.json();
+  return ingredient;
 }
 
-export async function getIngredient(id: number) {
-  const response = await fetch(
-    `http://localhost:3000/api/ingredientsList${id}`
-  );
-  if (!response.ok) {
-    const result = await response.json();
-    return {
-      name: result.error,
-      image: "",
-    } as Ingredient;
-  }
-  const result = (await response.json()) as APIIngredient;
-  const card = convertToCard(result);
-  return card;
+export async function getIngredients(): Promise<Ingredient[]> {
+  const response = await fetch(`/api/ingredients`);
+
+  const ingredients = await response.json();
+  return ingredients;
 }
