@@ -32,21 +32,27 @@ function CardMain({
 }: CardMainProps) {
   return (
     <div className={styles.cardMain}>
-      <h2 className={styles.name}>{name}</h2>
-      <img className={styles.image} src={image} alt="" />
-
+      <div className={styles.cardIntro}>
+        <h2 className={styles.name}>{name}</h2>
+        <img className={styles.image} src={image} alt="" />
+      </div>
       <div className={styles.factsContainer}>
         <div className={styles.factContainer}>
-          <h3 className={styles.factTitle}>% Fat</h3>
-          <h5 className={styles.factContent}>{fat}</h5>
+          <h3 className={styles.factTitle}>
+            % Fat
+            <h5 className={styles.factContent}>{fat}</h5>
+          </h3>
         </div>
         <div className={styles.factContainer}>
-          <h3 className={styles.factTitle}>% Carbs</h3>
-          <h5 className={styles.factContent}>{carbs}</h5>
+          <h3 className={styles.factTitle}>
+            % Carbs<h5 className={styles.factContent}>{carbs}</h5>
+          </h3>
         </div>
         <div className={styles.factContainer}>
-          <h3 className={styles.factTitle}>% Protein</h3>
-          <h5 className={styles.factContent}>{protein}</h5>
+          <h3 className={styles.factTitle}>
+            % Protein
+            <h5 className={styles.factContent}>{protein}</h5>
+          </h3>
         </div>
       </div>
       <div className={styles.familyContainer}>
