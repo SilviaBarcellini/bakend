@@ -32,8 +32,9 @@ function CardMain({
 }: CardMainProps) {
   return (
     <div className={styles.cardMain}>
-      <img className={styles.image} src={image} alt="" />
       <h2 className={styles.name}>{name}</h2>
+      <img className={styles.image} src={image} alt="" />
+
       <div className={styles.factsContainer}>
         <div className={styles.factContainer}>
           <h3 className={styles.factTitle}>% Fat</h3>
