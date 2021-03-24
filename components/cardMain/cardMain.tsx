@@ -48,11 +48,14 @@ function CardMain({
           <h5 className={styles.factContent}>{protein}</h5>
         </div>
       </div>
+      <div className={styles.familyContainer}>
+        <h3>{family}</h3>
+      </div>
       <div className={styles.dietContainer}>
         <h4 className={styles.dietFact}>Vegan</h4>
         <p>{vegan}</p>
         <h4 className={styles.dietFact}>Vegetarian</h4>
-        <p>{vegan}</p>
+        <p>{vegetarian}</p>
       </div>
       <div className={styles.allergensContainer}>
         <h4 className={styles.Allergen}>Gluten Free</h4>
