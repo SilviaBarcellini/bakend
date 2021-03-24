@@ -6,12 +6,12 @@ export type APIIngredient = {
   carbs: number;
   protein: number;
   family: "Sugar" | "Amids" | "Liquids" | "else";
-  vegan: boolean;
-  vegetarian: boolean;
-  glutenFree: boolean;
-  dairyFree: boolean;
-  nutsFree: boolean;
-  soyFree: boolean;
+  vegan: string;
+  vegetarian: string;
+  glutenFree: string;
+  dairyFree: string;
+  nutsFree: string;
+  soyFree: string;
 };
 
 export type APIIngredients = {
@@ -31,12 +31,12 @@ export type Ingredient = {
   fat: number;
   carbs: number;
   protein: number;
-  vegan: boolean;
-  vegetarian: boolean;
-  glutenFree: boolean;
-  dairyFree: boolean;
-  nutsFree: boolean;
-  soyFree: boolean;
+  vegan: string;
+  vegetarian: string;
+  glutenFree: string;
+  dairyFree: string;
+  nutsFree: string;
+  soyFree: string;
 };
 
 function convertToCard(apiIngredient: APIIngredient): Ingredient {
