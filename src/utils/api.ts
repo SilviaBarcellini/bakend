@@ -55,3 +55,19 @@ function convertToCard(apiIngredient: APIIngredient): Ingredient {
     soyFree: apiIngredient.soyFree,
   };
 }
+
+export async function getIngredient(id: number) {
+  const response = await fetch(
+    `http://localhost:3000/api/ingredientsList${id}`
+  );
+  if (!response.ok) {
+    const result = await response.json();
+    return {
+      name: result.error,
+      image: "",
+    } as Ingredient;
+  }
+  const result = (await response.json()) as APIIngredient;
+  const card = convertToCard(result);
+  return card;
+}
