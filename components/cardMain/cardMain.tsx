@@ -8,12 +8,12 @@ export type CardMainProps = {
   carbs: number;
   protein: number;
   family: "Sugar" | "Amids" | "Liquids" | "else";
-  vegan: boolean;
-  vegetarian: boolean;
-  glutenFree: boolean;
-  dairyFree: boolean;
-  nutsFree: boolean;
-  soyFree: boolean;
+  vegan: string;
+  vegetarian: string;
+  glutenFree: string;
+  dairyFree: string;
+  nutsFree: string;
+  soyFree: string;
 };
 
 function CardMain({
