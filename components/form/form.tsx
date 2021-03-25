@@ -5,6 +5,7 @@ import styles from "../form/form.module.css";
 
 type FormProps = {
   itemRequired: string;
+  label: string;
 };
 
 export default function Form() {
@@ -14,13 +15,15 @@ export default function Form() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
       <input
+        placeholder="Today I am out of ..."
+        className={styles.input}
         name="itemRequired"
         ref={register({ required: true, minLength: 4 })}
       />
       {errors.itemRequired && <p>This field is required</p>}
-      <input type="submit" />
+      <input className={styles.submit} type="submit" />
     </form>
   );
 }

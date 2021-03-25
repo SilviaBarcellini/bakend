@@ -1,3 +1,43 @@
-.form {
-  background-color: hotpink;
+.input {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #574848;
+  background-image: linear-gradient(
+    to bottom,
+    #ffedfa 0%,
+    #ffc7ef 51%,
+    #ffcef1 100%
+  );
+  box-shadow: 0 0 5rem #148dff;
+  border: 1px solid;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.submit {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: var(--button-main);
+  background-image: linear-gradient(
+    to right,
+    #f723ff 0%,
+    #fb23cd 51%,
+    #fb23cd 100%
+  );
+  border: 1px solid;
+  border-radius: 20px;
+  font-family: "Paytone One", sans-serif;
+  font-size: 1.3rem;
+}
+
+.submit:hover {
+  background-position: right center;
 }
