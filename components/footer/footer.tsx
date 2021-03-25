@@ -11,7 +11,7 @@ function Footer({ favsIcon, homeIcon }: FooterProps) {
       <a href="#">
         <img className={styles.favs} src={favsIcon} alt="heart" />
       </a>
-      <a href="#">
+      <a href="/">
         <img className={styles.home} src={homeIcon} alt="home" />
       </a>
     </footer>

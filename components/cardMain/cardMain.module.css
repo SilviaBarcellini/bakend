@@ -1,0 +1,129 @@
+.cardMain {
+  background-color: #362f2f;
+  color: #a09897;
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.image {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  color: whitesmoke;
+}
+
+.factsContainer {
+  background-color: #423939;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.factContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  border-radius: 20px;
+}
+
+.factTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.factContent {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 20px;
+}
+
+.dietContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.diet {
+  background-color: #040404;
+  color: #27ff27;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border-radius: 20px;
+}
+.dairy {
+  background-color: black;
+  color: #74bfff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border-radius: 20px;
+}
+
+.gluten {
+  background-color: black;
+  color: #ffff9f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border-radius: 20px;
+}
+
+.nuts {
+  background-color: black;
+  color: #ffba80;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border-radius: 20px;
+}
+
+.soy {
+  background-color: black;
+  color: #c0ffbe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border-radius: 20px;
+}
