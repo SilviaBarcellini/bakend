@@ -18,10 +18,19 @@ function Form() {
     console.log(ingredients);
   };
 
+  const updateSearch = (e) => {
+    setFilter(e.target.value);
+  };
+
   return (
     <div className={styles.container}>
       <form className={styles.form}>
-        <input className={styles.input} type="text" value={filter} />
+        <input
+          className={styles.input}
+          type="text"
+          value={filter}
+          onChange={updateSearch}
+        />
         <button className={styles.button} type="submit">
           Go!
         </button>
