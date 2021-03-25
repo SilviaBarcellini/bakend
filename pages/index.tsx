@@ -26,8 +26,6 @@ export default function Home() {
           </main>
           <div>
             <Greetings />
-            <Input placeholder="Today I am out of ..." />
-            <Btn label="Go!" />
           </div>
         </div>
         <footer className={styles.footer}>
