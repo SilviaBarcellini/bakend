@@ -40,18 +40,18 @@ function CardMain({
         <div className={styles.factContainer}>
           <h3 className={styles.factTitle}>
             % Fat
-            <h5 className={styles.factContent}>{fat}</h5>
+            <p className={styles.factContent}>{fat}</p>
           </h3>
         </div>
         <div className={styles.factContainer}>
           <h3 className={styles.factTitle}>
-            % Carbs<h5 className={styles.factContent}>{carbs}</h5>
+            % Carbs<p className={styles.factContent}>{carbs}</p>
           </h3>
         </div>
         <div className={styles.factContainer}>
           <h3 className={styles.factTitle}>
             % Protein
-            <h5 className={styles.factContent}>{protein}</h5>
+            <p className={styles.factContent}>{protein}</p>
           </h3>
         </div>
       </div>
