@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import styles from "./form.module.css";
 import { useState } from "react";
 import { getIngredient } from "../../src/utils/api";
+import CardMain from "../cardMain/cardMain";
 
 function Form() {
   const [ingredients, setIngredients] = useState([]);
