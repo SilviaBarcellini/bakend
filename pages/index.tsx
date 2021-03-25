@@ -7,7 +7,6 @@ import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import OpenNewPage from "../components/openNewPage/openNewPage";
 import Form from "../components/form/form";
-
 export default function Home() {
   return (
     <div>
