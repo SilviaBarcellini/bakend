@@ -7,7 +7,7 @@ export type CardMainProps = {
   fat: number;
   carbs: number;
   protein: number;
-  family: "Sugar" | "Amids" | "Liquids" | "else";
+  family: "Sugars" | "Amids" | "Liquids" | "else";
   vegan: string;
   vegetarian: string;
   glutenFree: string;
