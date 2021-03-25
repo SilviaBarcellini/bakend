@@ -21,6 +21,22 @@ sugar.args = {
   vegan: "yes",
   vegetarian: "yes",
   glutenFree: "yes",
+  dairyFree: "yes",
+  nutsFree: "yes",
+  soyFree: "yes",
+};
+
+export const milk = Template.bind({});
+milk.args = {
+  name: "Milk",
+  image: "/milk.svg",
+  fat: 3.6,
+  carbs: 3.4,
+  protein: 3.8,
+  family: "Liquids",
+  vegan: "no",
+  vegetarian: "no",
+  glutenFree: "yes",
   dairyFree: "no",
   nutsFree: "yes",
   soyFree: "yes",
