@@ -23,7 +23,7 @@ export default function Form() {
         ref={register({ required: true, minLength: 4 })}
       />
       {errors.itemRequired && <p>This field is required</p>}
-      <input className={styles.submit} type="submit" />
+      <input className={styles.submit} type="submit" value="Go!!" />
     </form>
   );
 }
