@@ -28,9 +28,9 @@
   color: var(--button-main);
   background-image: linear-gradient(
     to right,
-    #f723ff 0%,
+    #df11fa 0%,
     #fb23cd 51%,
-    #fb23cd 100%
+    #8023fb 100%
   );
   border: 1px solid;
   border-radius: 20px;
