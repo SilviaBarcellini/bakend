@@ -5,6 +5,7 @@ import CardMain from "../cardMain/cardMain";
 
 function Form() {
   const [ingredients, setIngredients] = useState([]);
+  const [filter, setFilter] = useState("");
 
   useEffect(() => {
     getIngredients();
@@ -20,7 +21,7 @@ function Form() {
   return (
     <div className={styles.container}>
       <form className={styles.form}>
-        <input className={styles.input} type="text" />
+        <input className={styles.input} type="text" value={filter} />
         <button className={styles.button} type="submit">
           Go!
         </button>
