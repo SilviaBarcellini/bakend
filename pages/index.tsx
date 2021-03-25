@@ -23,6 +23,11 @@ export default function Home() {
             <Button primary label="Primary" />
             <Button primary={false} label="Secondary" />
             <OpenNewPage />
+            <div>
+              <a href="/mainCard">
+                press here to navigate to the Main Card Page (temporary link)
+              </a>
+            </div>
           </main>
           <div>
             <Greetings />
