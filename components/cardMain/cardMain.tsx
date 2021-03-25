@@ -1,8 +1,7 @@
 import styles from "./cardMain.module.css";
-import { Ingredient } from "../../src/utils/api";
 
 export type CardMainProps = {
-  image: string;
+  //image: string;
   name: string;
   fat: number;
   carbs: number;
@@ -18,7 +17,7 @@ export type CardMainProps = {
 
 function CardMain({
   name,
-  image,
+  //image,
   fat,
   carbs,
   protein,
@@ -35,7 +34,7 @@ function CardMain({
       <div className={styles.cardIntro}>
         <h2 className={styles.name}>{name}</h2>
         <h3>{family}</h3>
-        <img className={styles.image} src={image} alt="" />
+        {/* <img className={styles.image} src={image} alt="" /> */}
       </div>
       <div className={styles.factsContainer}>
         <div className={styles.factContainer}>

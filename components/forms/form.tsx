@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./form.module.css";
-import { useState } from "react";
-import { getIngredient } from "../../src/utils/api";
+//import { getIngredient } from "../../src/utils/api";
 import CardMain from "../cardMain/cardMain";
 
 function Form() {
@@ -26,6 +25,23 @@ function Form() {
           Go!
         </button>
       </form>
+      {ingredients.map((ingredient) => (
+        <CardMain
+          key={ingredient.name}
+          name={ingredient.name}
+          /* image={ingredient.image} */
+          fat={ingredient.fat}
+          carbs={ingredient.carbs}
+          protein={ingredient.protein}
+          family={ingredient.family}
+          vegan={ingredient.vegan}
+          vegetarian={ingredient.vegetarian}
+          glutenFree={ingredient.glutenFree}
+          dairyFree={ingredient.dairyFree}
+          nutsFree={ingredient.glutenFree}
+          soyFree={ingredient.soyFree}
+        />
+      ))}
     </div>
   );
 }
