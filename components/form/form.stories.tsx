@@ -12,5 +12,5 @@ const Template: Story<typeof FormProps> = (args) => <FormProps {...args} />;
 
 export const form = Template.bind({});
 form.args = {
-  itemRequired: "today I am out of",
+  itemRequired: "",
 };
