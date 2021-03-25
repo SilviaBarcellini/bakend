@@ -1,0 +1,15 @@
+{
+  "_id": { "$oid": "605a148906f54d49f7a25f37" },
+  "name": "sugar",
+  "Carbs": "100",
+  "Dairy-Free": "yes",
+  "Family": "sugars",
+  "Fat": "0",
+  "Gluten-Free": "yes",
+  "Nuts-Free": "yes",
+  "Protein": "0",
+  "Soy-Free": "yes",
+  "Vegan": "yes",
+  "Vegetarian": "yes",
+  "img": "public/sugar-cubes.svg"
+}
