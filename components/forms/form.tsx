@@ -48,6 +48,7 @@ function Form() {
       <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
         <input
           className={styles.input}
+          placeholder="today I am out of ..."
           name="itemRequired"
           ref={register({ required: true, minLength: 4 })}
           type="text"
@@ -63,7 +64,7 @@ function Form() {
         <CardMain
           key={ingredient.name}
           name={ingredient.name}
-          /* image={ingredient.image} */
+          image={ingredient.image}
           fat={ingredient.fat}
           carbs={ingredient.carbs}
           protein={ingredient.protein}
