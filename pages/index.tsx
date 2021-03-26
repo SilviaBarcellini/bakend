@@ -6,7 +6,6 @@ import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import OpenNewPage from "../components/openNewPage/openNewPage";
 import Form from "../components/forms/form";
-
 export default function Home() {
   return (
     <div>
@@ -30,6 +29,7 @@ export default function Home() {
           </main>
           <div>
             <Greetings />
+            <Form />
           </div>
           <div>
             <Form />
