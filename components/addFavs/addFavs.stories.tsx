@@ -12,11 +12,11 @@ const Template: Story<AddFavsProps> = (args) => <AddFavs {...args} />;
 export const isFav = Template.bind({});
 isFav.args = {
   isFav: true,
-  image: "/heartf.svg",
+  image: "/liked.svg",
 };
 
 export const addFav = Template.bind({});
 addFav.args = {
   isFav: false,
-  image: "/hearts.svg",
+  image: "/like.svg",
 };
