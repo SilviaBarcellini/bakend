@@ -27,13 +27,6 @@ function Form() {
     console.log(ingredients);
   };
 
-  /* const getIngredient = async () => {
-    const response = await fetch(`/api/ingredients/${name}`);
-    const ingredient = await response.json();
-    setIngredients(ingredient);
-    console.log(ingredient);
-  }; */
-
   const updateSearch = (e) => {
     setFilter(e.target.value);
   };
