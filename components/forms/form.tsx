@@ -15,7 +15,6 @@ function Form() {
   };
   const [ingredients, setIngredients] = useState([]);
   const [filter, setFilter] = useState("");
-  const [query, setQuery] = useState("sugar");
 
   useEffect(() => {
     getIngredients();
@@ -28,20 +27,20 @@ function Form() {
     console.log(ingredients);
   };
 
-  const getIngredient = async () => {
+  /* const getIngredient = async () => {
     const response = await fetch(`/api/ingredients/${name}`);
     const ingredient = await response.json();
     setIngredients(ingredient);
     console.log(ingredient);
-  };
+  }; */
 
   const updateSearch = (e) => {
     setFilter(e.target.value);
   };
 
-  const getSearch = (e) => {
-    setQuery(filter);
-  };
+  const filteredIngredients = ingredients.filter((ingredient) =>
+    ingredient.name.startsWith(filter)
+  );
 
   return (
     <div className={styles.container}>
@@ -60,7 +59,7 @@ function Form() {
           Go!
         </button>
       </form>
-      {ingredients.map((ingredient) => (
+      {filteredIngredients.map((ingredient) => (
         <CardMain
           key={ingredient.name}
           name={ingredient.name}
