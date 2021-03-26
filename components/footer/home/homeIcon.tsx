@@ -6,7 +6,7 @@ export type HomeIconProps = {
 
 function HomeIcon({ imgSrc }: HomeIconProps) {
   return (
-    <a href="#">
+    <a href="/">
       <img className={styles.icon} src={imgSrc} />
     </a>
   );
