@@ -14,7 +14,6 @@ function Form() {
     alert(data);
   };
   const [ingredients, setIngredients] = useState([]);
-  const [ingredient, setIngredient] = useState([]);
   const [filter, setFilter] = useState("");
   const [query, setQuery] = useState("sugar");
 
@@ -32,7 +31,7 @@ function Form() {
   const getIngredient = async () => {
     const response = await fetch(`/api/ingredients/${name}`);
     const ingredient = await response.json();
-    setIngredient(ingredient);
+    setIngredients(ingredient);
     console.log(ingredient);
   };
 
