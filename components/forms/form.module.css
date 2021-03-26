@@ -41,3 +41,9 @@
 .button:hover {
   background-position: right center;
 }
+
+.error {
+  color: #f00;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
