@@ -1,7 +1,7 @@
 export type Ingredient = {
   _id: string;
   name: string;
-  img: string;
+  image: string;
   fat: number;
   carbs: number;
   protein: number;

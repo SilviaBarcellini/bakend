@@ -1,7 +1,5 @@
-import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
 import CardMain, { CardMainProps } from "./cardMain";
-import { Ingredient } from "../../src/utils/api";
 
 export default {
   title: "Common/CardMain",
