@@ -11,7 +11,7 @@ const Template: Story<CardMainProps> = (args) => <CardMain {...args} />;
 export const sugar = Template.bind({});
 sugar.args = {
   name: "Sugar",
-  //image: "/sugar-cubes.svg",
+  image: "/sugar-cubes.svg",
   fat: 0,
   carbs: 98,
   protein: 0,
@@ -27,7 +27,7 @@ sugar.args = {
 export const milk = Template.bind({});
 milk.args = {
   name: "Milk",
-  //image: "/milk.svg",
+  image: "/milk.svg",
   fat: 3.6,
   carbs: 3.4,
   protein: 3.8,
