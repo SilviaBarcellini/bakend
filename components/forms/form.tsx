@@ -14,18 +14,26 @@ function Form() {
     alert(data);
   };
   const [ingredients, setIngredients] = useState([]);
+  const [ingredient, setIngredient] = useState([]);
   const [filter, setFilter] = useState("");
   const [query, setQuery] = useState("sugar");
 
   useEffect(() => {
     getIngredients();
-  }, [query]);
+  }, []);
 
   const getIngredients = async () => {
     const response = await fetch(`/api/ingredients/`);
     const ingredients = await response.json();
     setIngredients(ingredients);
     console.log(ingredients);
+  };
+
+  const getIngredient = async () => {
+    const response = await fetch(`/api/ingredients/${name}`);
+    const ingredient = await response.json();
+    setIngredient(ingredient);
+    console.log(ingredient);
   };
 
   const updateSearch = (e) => {
