@@ -29,7 +29,6 @@ export default function Home() {
           </main>
           <div>
             <Greetings />
-            <Form />
           </div>
           <div>
             <Form />
