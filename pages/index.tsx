@@ -6,6 +6,8 @@ import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import OpenNewPage from "../components/openNewPage/openNewPage";
 import Form from "../components/forms/form";
+import Btn from "../components/btn/btn";
+
 export default function Home() {
   return (
     <div>
@@ -16,23 +18,25 @@ export default function Home() {
             <title>Create Next App</title>
             <link rel="icon" href="/favicon.ico" />
           </Head>
-
           <main className={styles.main}>
-            <Button primary label="Primary" />
+            {/* <Button primary label="Primary" />
             <Button primary={false} label="Secondary" />
-            <OpenNewPage />
-            <div>
-              <a href="/mainCard">
-                press here to navigate to the Main Card Page (temporary link)
-              </a>
-            </div>
+            <OpenNewPage /> */}
           </main>
           <div>
             <Greetings />
           </div>
-          <div>
-            <Form />
+          <div className={styles.btn}>
+            <a href="/Form">
+              <Btn label="Today I am out of ..." />
+            </a>
+            <a href="/mainCard">
+              <Btn label="Discover New Ingredients!" />
+            </a>
           </div>
+          {/* <div>
+            <Form />
+          </div> */}
         </div>
         <footer className={styles.footer}>
           <Footer homeIcon="/home.svg" favsIcon="/heartf.svg" />
