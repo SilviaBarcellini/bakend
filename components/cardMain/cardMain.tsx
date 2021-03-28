@@ -6,13 +6,13 @@ export type CardMainProps = {
   fat: number;
   carbs: number;
   protein: number;
-  family: "Sugars" | "Amids" | "Liquids" | "else";
-  vegan: string;
-  vegetarian: string;
-  glutenFree: string;
-  dairyFree: string;
-  nutsFree: string;
-  soyFree: string;
+  family: "Sugars" | "Fats" | "Liquids" | "else";
+  vegan: boolean;
+  vegetarian: boolean;
+  glutenFree: boolean;
+  dairyFree: boolean;
+  nutsFree: boolean;
+  soyFree: boolean;
 };
 
 function CardMain({
@@ -60,34 +60,34 @@ function CardMain({
         <div>
           <div className={styles.info}>
             <h4 className={styles.diet}>
-              <span>{vegan === "yes" ? "💚 " : "💔"}</span>
+              <span>{vegan === true ? "💚 " : "💔"}</span>
               Vegan
             </h4>
             <h4 className={styles.diet}>
-              <span>{vegetarian === "yes" ? "💚 " : "💔"}</span>
+              <span>{vegetarian === true ? "💚 " : "💔"}</span>
               Vegetarian
             </h4>
             <h4 className={styles.gluten}>
               <span className={styles.yes}>
-                {glutenFree === "yes" ? "💚 " : "💔"}
+                {glutenFree === true ? "💚 " : "💔"}
               </span>
               Gluten Free
             </h4>
             <h4 className={styles.dairy}>
               <span className={styles.span}>
-                {dairyFree === "yes" ? "💚 " : "💔"}
+                {dairyFree === true ? "💚 " : "💔"}
               </span>
               Dairy Free
             </h4>
             <h4 className={styles.nuts}>
               <span className={styles.span}>
-                {nutsFree === "yes" ? "💚 " : "💔"}
+                {nutsFree === true ? "💚 " : "💔"}
               </span>
               Nuts Free
             </h4>
             <h4 className={styles.soy}>
               <span className={styles.span}>
-                {soyFree === "yes" ? "💚 " : "💔"}
+                {soyFree === true ? "💚 " : "💔"}
               </span>
               Soy Free
             </h4>
