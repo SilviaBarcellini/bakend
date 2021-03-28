@@ -10,7 +10,7 @@ export default function MainCard() {
         <Header logo="bakend" imageSrc="/donuts.svg" />
       </div>
 
-      <div>
+      <div className={styles.container}>
         <div className={styles.card}>
           <CardMain
             name="Milk"

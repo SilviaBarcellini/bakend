@@ -3,6 +3,8 @@
   color: #a09897;
   border-radius: 20px;
   padding: 1rem;
+  margin-bottom: 1rem;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,4 +128,13 @@
   align-items: center;
   padding: 0.2rem 1rem 0.2rem 1rem;
   border-radius: 20px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding: 2rem;
 }
