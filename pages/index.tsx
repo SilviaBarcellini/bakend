@@ -1,11 +1,8 @@
 import Head from "next/head";
-import Button from "../components/button/Button";
 import Greetings from "../components/greetings/greetings";
 import styles from "../styles/Home.module.css";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
-import OpenNewPage from "../components/openNewPage/openNewPage";
-import Form from "../components/forms/form";
 import Btn from "../components/btn/btn";
 
 export default function Home() {
