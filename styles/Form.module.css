@@ -1,0 +1,21 @@
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form {
+  min-width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
