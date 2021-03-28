@@ -14,6 +14,16 @@ calculate.args = {
   label: "Calculate >>>",
 };
 
+export const choices = Template.bind({});
+choices.args = {
+  label: "Today I Am Out Of ...",
+};
+
+export const discover = Template.bind({});
+discover.args = {
+  label: "Discover New Ingredients",
+};
+
 export const add = Template.bind({});
 add.args = {
   label: "Add 💚",
