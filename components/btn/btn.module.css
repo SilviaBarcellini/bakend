@@ -8,14 +8,14 @@
   background-image: linear-gradient(
     to right,
     #f723ff 0%,
-    #fb23cd 51%,
+    #6f22ff 51%,
     #fb23cd 100%
   );
-  box-shadow: 0 0 20px rgb(173, 252, 255);
   border: 1px solid;
   border-radius: 20px;
   font-family: "Paytone One", sans-serif;
   font-size: 1.3rem;
+  margin: 1rem 0 1rem 0;
 }
 
 .btn:hover {
