@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { /* useForm, */ SubmitHandler } from "react-hook-form";
 import styles from "./form.module.css";
 //import { getIngredient } from "../../src/utils/api";
 import CardMain from "../cardMain/cardMain";
@@ -9,10 +9,10 @@ type FormProps = {
 };
 
 function Form() {
-  const { register, handleSubmit, errors } = useForm<FormProps>();
-  const onSubmit: SubmitHandler<FormProps> = (data) => {
-    alert(data);
-  };
+  //const { register, handleSubmit, errors } = useForm<FormProps>();
+  //const onSubmit: SubmitHandler<FormProps> = (data) => {
+  //  alert(data);
+  //};
   const [ingredients, setIngredients] = useState([]);
   const [filter, setFilter] = useState("");
 
@@ -31,24 +31,29 @@ function Form() {
     setFilter(e.target.value);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("you have searched for - " + filter);
+    // or you can send to backend
+  };
   const filteredIngredients = ingredients.filter((ingredient) =>
     ingredient.name.startsWith(filter)
   );
 
   return (
     <div className={styles.container}>
-      <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+      <form className={styles.form}>
         <input
           className={styles.input}
           placeholder="today I am out of ..."
           name="itemRequired"
-          ref={register({ required: true, minLength: 4 })}
+          //ref={register({ required: true, minLength: 4 })}
           type="text"
           value={filter}
           onChange={updateSearch}
         />
-        {errors.itemRequired && <p>This field is required</p>}
-        <button className={styles.button} type="submit">
+        {/* //{errors.itemRequired && <p>This field is required</p>} */}
+        <button className={styles.button} onClick={handleSubmit} type="submit">
           Go!
         </button>
       </form>
