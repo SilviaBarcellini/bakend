@@ -13,7 +13,6 @@ export type CardMainProps = {
   dairyFree: boolean;
   nutsFree: boolean;
   soyFree: boolean;
-
 };
 
 function CardMain({
@@ -92,7 +91,6 @@ function CardMain({
               Soy Free
             </h4>
           </div>
-
         </div>
       </div>
     </div>
