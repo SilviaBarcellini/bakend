@@ -15,11 +15,7 @@ export default function Home() {
             <title>Create Next App</title>
             <link rel="icon" href="/favicon.ico" />
           </Head>
-          <main className={styles.main}>
-            {/* <Button primary label="Primary" />
-            <Button primary={false} label="Secondary" />
-            <OpenNewPage /> */}
-          </main>
+          <main className={styles.main}></main>
           <div>
             <Greetings />
           </div>
@@ -31,9 +27,6 @@ export default function Home() {
               <Btn label="Discover New Ingredients!" />
             </a>
           </div>
-          {/* <div>
-            <Form />
-          </div> */}
         </div>
         <footer className={styles.footer}>
           <Footer homeIcon="/home.svg" favsIcon="/heartf.svg" />
