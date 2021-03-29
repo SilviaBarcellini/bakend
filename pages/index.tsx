@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Greetings from "../components/greetings/greetings";
 import styles from "../styles/Home.module.css";
 import Header from "../components/header/header";
@@ -20,12 +21,16 @@ export default function Home() {
             <Greetings />
           </div>
           <div className={styles.btn}>
-            <a href="/Form">
-              <Btn label="Today I am out of ..." />
-            </a>
-            <a href="/mainCard">
-              <Btn label="Discover New Ingredients!" />
-            </a>
+            <Link href="/Form">
+              <a>
+                <Btn label="Today I am out of ..." />
+              </a>
+            </Link>
+            <Link href="/MainCard">
+              <a>
+                <Btn label="Discover New Ingredients!" />
+              </a>
+            </Link>
           </div>
         </div>
         <footer className={styles.footer}>

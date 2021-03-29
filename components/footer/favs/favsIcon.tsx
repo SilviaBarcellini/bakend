@@ -1,4 +1,5 @@
 import styles from "./favsIcon.module.css";
+import Link from "next/link";
 
 export type FavsIconProps = {
   imgSrc: string;
@@ -6,9 +7,11 @@ export type FavsIconProps = {
 
 function FavsIcon({ imgSrc }: FavsIconProps) {
   return (
-    <a href="#">
-      <img className={styles.icon} src={imgSrc} />
-    </a>
+    <Link href="#">
+      <a>
+        <img className={styles.icon} src={imgSrc} />
+      </a>
+    </Link>
   );
 }
 
