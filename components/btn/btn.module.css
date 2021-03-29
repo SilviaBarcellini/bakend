@@ -7,9 +7,9 @@
   color: var(--button-main);
   background-image: linear-gradient(
     to right,
-    #f723ff 0%,
-    #6f22ff 51%,
-    #fb23cd 100%
+    var(--gradient-1) 0%,
+    var(--gradient-2) 51%,
+    var(--gradient-3) 100%
   );
   border: 1px solid;
   border-radius: 20px;

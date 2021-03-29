@@ -28,6 +28,9 @@ a {
   --secondary-color: #7406c4;
   --selected-card-color: #000aff;
   --card-background-color: #362f2f;
+  --gradient-1: #f723ff;
+  --gradient-2: #6f22ff;
+  --gradient-3: #fb23cd;
 }
 * {
   box-sizing: border-box;
