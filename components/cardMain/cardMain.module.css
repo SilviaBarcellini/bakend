@@ -3,9 +3,10 @@
   color: #a09897;
   border-radius: 20px;
   padding: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  font-family: Poppins, sans-serif;
 }
 
 .cardIntro {

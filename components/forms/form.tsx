@@ -52,23 +52,25 @@ function Form() {
           Go!
         </button>
       </form>
-      {filteredIngredients.map((ingredient) => (
-        <CardMain
-          key={ingredient.name}
-          name={ingredient.name}
-          image={ingredient.image}
-          fat={ingredient.fat}
-          carbs={ingredient.carbs}
-          protein={ingredient.protein}
-          family={ingredient.family}
-          vegan={ingredient.vegan}
-          vegetarian={ingredient.vegetarian}
-          glutenFree={ingredient.glutenFree}
-          dairyFree={ingredient.dairyFree}
-          nutsFree={ingredient.glutenFree}
-          soyFree={ingredient.soyFree}
-        />
-      ))}
+      <div className={styles.cardMain}>
+        {filteredIngredients.map((ingredient) => (
+          <CardMain
+            key={ingredient.name}
+            name={ingredient.name}
+            image={ingredient.image}
+            fat={ingredient.fat}
+            carbs={ingredient.carbs}
+            protein={ingredient.protein}
+            family={ingredient.family}
+            vegan={ingredient.vegan}
+            vegetarian={ingredient.vegetarian}
+            glutenFree={ingredient.glutenFree}
+            dairyFree={ingredient.dairyFree}
+            nutsFree={ingredient.glutenFree}
+            soyFree={ingredient.soyFree}
+          />
+        ))}
+      </div>
     </div>
   );
 }

@@ -6,12 +6,12 @@ export type Ingredient = {
   carbs: number;
   protein: number;
   family: "Sugars" | "Fats" | "Liquids" | "else";
-  vegan: string;
-  vegetarian: string;
-  glutenFree: string;
-  dairyFree: string;
-  nutsFree: string;
-  soyFree: string;
+  vegan: boolean;
+  vegetarian: boolean;
+  glutenFree: boolean;
+  dairyFree: boolean;
+  nutsFree: boolean;
+  soyFree: boolean;
 };
 
 export async function getIngredient(name: string): Promise<Ingredient> {

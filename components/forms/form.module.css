@@ -11,7 +11,7 @@
     #ffc7ef 51%,
     #ffcef1 100%
   );
-  box-shadow: 0 0 5rem #148dff;
+  box-shadow: 0 0 2rem #148dff;
   border: 1px solid;
   border-radius: 20px;
   font-family: "Poppins", sans-serif;
@@ -28,9 +28,9 @@
   color: var(--button-main);
   background-image: linear-gradient(
     to right,
-    #f723ff 0%,
-    #6f22ff 51%,
-    #fb23cd 100%
+    var(--gradient-1) 0%,
+    var(--gradient-2) 51%,
+    var(--gradient-3) 100%
   );
   border: 1px solid;
   border-radius: 20px;
@@ -42,8 +42,7 @@
   background-position: right center;
 }
 
-.error {
-  color: #f00;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  text-align: center;
+.cardMain {
+  margin: 1rem;
+  margin-bottom: 2rem;
 }

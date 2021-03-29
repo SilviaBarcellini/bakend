@@ -10,7 +10,7 @@ export default function MainCard() {
         <Header logo="bakend" imageSrc="/donuts.svg" />
       </div>
 
-      <div>
+      <div className={styles.container}>
         <div className={styles.card}>
           <CardMain
             name="Milk"
@@ -19,12 +19,12 @@ export default function MainCard() {
             carbs={4.8}
             protein={3.6}
             family="Liquids"
-            vegan="no"
-            vegetarian="no"
-            glutenFree="yes"
-            dairyFree="no"
-            nutsFree="yes"
-            soyFree="yes"
+            vegan={false}
+            vegetarian={false}
+            glutenFree={false}
+            dairyFree={false}
+            nutsFree={true}
+            soyFree={true}
           />
         </div>
         <div className={styles.card}>
@@ -35,12 +35,12 @@ export default function MainCard() {
             carbs={98}
             protein={0}
             family="Sugars"
-            vegan="yes"
-            vegetarian="yes"
-            glutenFree="yes"
-            dairyFree="yes"
-            nutsFree="yes"
-            soyFree="yes"
+            vegan={true}
+            vegetarian={true}
+            glutenFree={true}
+            dairyFree={true}
+            nutsFree={true}
+            soyFree={true}
           />
         </div>
       </div>

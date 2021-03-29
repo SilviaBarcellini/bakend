@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+
+.form {
+  padding: 2.2rem 0.5rem 2.2rem 0.5rem;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
