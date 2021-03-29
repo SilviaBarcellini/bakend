@@ -5,7 +5,7 @@ export type Ingredient = {
   fat: number;
   carbs: number;
   protein: number;
-  family: "Sugars" | "Amids" | "Liquids" | "else";
+  family: "Sugars" | "Fats" | "Liquids" | "else";
   vegan: string;
   vegetarian: string;
   glutenFree: string;

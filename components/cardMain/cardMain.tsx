@@ -6,7 +6,7 @@ export type CardMainProps = {
   fat: number;
   carbs: number;
   protein: number;
-  family: "Sugars" | "Amids" | "Liquids" | "else";
+  family: "Sugars" | "Fats" | "Liquids" | "else";
   vegan: string;
   vegetarian: string;
   glutenFree: string;
@@ -80,7 +80,7 @@ function CardMain({
           </h4>
           <h4 className={styles.nuts}>
             <span className={styles.span}>
-              {nutsFree === "yes" ? "💚 " : "💔"}
+              {nutsFree === "yes" ? "💚" : "💔"}
             </span>
             Nuts Free
           </h4>
