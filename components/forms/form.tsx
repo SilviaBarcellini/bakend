@@ -1,24 +1,19 @@
-import React, { useEffect, useState } from "react";
-import { /* useForm, */ SubmitHandler } from "react-hook-form";
+import React, { useState } from "react";
 import styles from "./form.module.css";
-//import { getIngredient } from "../../src/utils/api";
+import { getIngredients } from "../../src/utils/api";
 import CardMain from "../cardMain/cardMain";
 
-type FormProps = {
+/* type FormProps = {
   itemRequired: string;
 };
-
+ */
 function Form() {
-  //const { register, handleSubmit, errors } = useForm<FormProps>();
-  //const onSubmit: SubmitHandler<FormProps> = (data) => {
-  //  alert(data);
-  //};
   const [ingredients, setIngredients] = useState([]);
   const [filter, setFilter] = useState("");
 
-  useEffect(() => {
-    getIngredients();
-  }, []);
+  const handleChange = (e) => {
+    setFilter(e.target.filter);
+  };
 
   const getIngredients = async () => {
     const response = await fetch(`/api/ingredients/`);
@@ -27,14 +22,9 @@ function Form() {
     console.log(ingredients);
   };
 
-  const updateSearch = (e) => {
-    setFilter(e.target.value);
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("you have searched for - " + filter);
-    // or you can send to backend
   };
   const filteredIngredients = ingredients.filter((ingredient) =>
     ingredient.name.startsWith(filter)
@@ -46,11 +36,11 @@ function Form() {
         <input
           className={styles.input}
           placeholder="today I am out of ..."
-          name="itemRequired"
+          name={filter}
           //ref={register({ required: true, minLength: 4 })}
           type="text"
           value={filter}
-          onChange={updateSearch}
+          onChange={handleChange}
         />
         {/* //{errors.itemRequired && <p>This field is required</p>} */}
         <button className={styles.button} onClick={handleSubmit} type="submit">
