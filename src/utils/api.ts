@@ -12,6 +12,9 @@ export type Ingredient = {
   dairyFree: boolean;
   nutsFree: boolean;
   soyFree: boolean;
+  inst: number;
+  liq: number;
+  sweetPower: number;
 };
 
 export async function getIngredient(name: string): Promise<Ingredient> {
