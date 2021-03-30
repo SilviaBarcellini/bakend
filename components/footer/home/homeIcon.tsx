@@ -1,4 +1,5 @@
 import styles from "./homeIcon.module.css";
+import Link from "next/link";
 
 export type HomeIconProps = {
   imgSrc: string;
@@ -6,9 +7,11 @@ export type HomeIconProps = {
 
 function HomeIcon({ imgSrc }: HomeIconProps) {
   return (
-    <a href="/">
-      <img className={styles.icon} src={imgSrc} />
-    </a>
+    <Link href="/">
+      <a>
+        <img className={styles.icon} src={imgSrc} />
+      </a>
+    </Link>
   );
 }
 

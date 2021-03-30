@@ -1,13 +1,18 @@
 .footer {
-  background-color: #9ff4ff;
+  background-color: var(--footer);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
   max-height: 4.5rem;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .home {
