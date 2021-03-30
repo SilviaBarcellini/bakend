@@ -11,9 +11,9 @@ export default function SplashPage() {
           <h1>Calculate :)</h1>
           <Calc label="calc" />
           <div>
-            <Row label="row" />
+            <Row option="option 1" />
             <div>=</div>
-            <Row label="row" />
+            <Row option="option 2" />
           </div>
         </div>
       </div>
