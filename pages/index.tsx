@@ -31,6 +31,11 @@ export default function Home() {
                 <Btn label="Discover New Ingredients!" />
               </a>
             </Link>
+            <Link href="/Calculator">
+              <a>
+                <Btn label="Calculate!!" />
+              </a>
+            </Link>
           </div>
         </div>
         <footer className={styles.footer}>
