@@ -3,12 +3,14 @@ import type { Ingredient } from "../../../src/utils/api";
 
 type RowProps = {
   options: Ingredient[];
+
   selectedIng: string;
+  ingRate: Ingredient[];
   onChangeIng: string;
   //onChangeIng: ChangeEventHandler<HTMLSelectElement>;
 };
 
-function Row({ options, selectedIng, onChangeIng }: RowProps) {
+function Row({ options, selectedIng, onChangeIng, ingRate }: RowProps) {
   return (
     <div>
       <div>
@@ -22,7 +24,11 @@ function Row({ options, selectedIng, onChangeIng }: RowProps) {
           }} */
         >
           {options.map((ingredient) => {
-            return <option key={ingredient._id}>{ingredient.name}</option>;
+            return (
+              <option key={ingredient._id}>
+                {ingredient.name} {/* {ingredient.inst} */}
+              </option>
+            );
           })}
         </select>
       </div>

@@ -7,6 +7,10 @@ export default function Calculator() {
   const [ingOptions, setIngOptions] = useState([]);
   const [fromIng, setFromIng] = useState();
   const [toIng, setToIng] = useState();
+  const [exchangeRate, setExchangeRate] = useState();
+  const [amount, setAmount] = useState(1);
+  const [amountFromIng, setAmountFromIng] = useState(true);
+  const [ingRate, setIngRate] = useState([]);
 
   useEffect(() => {
     const getIngredients = async () => {
@@ -32,7 +36,9 @@ export default function Calculator() {
             <Row
               options={ingOptions}
               selectedIng={fromIng}
+              ingRate={ingRate}
               onChangeIng={(e) => setFromIng(e.target.value)}
+
               /* onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
                 e.target.value;
               }} */
@@ -41,6 +47,7 @@ export default function Calculator() {
             <Row
               options={ingOptions}
               selectedIng={toIng}
+              ingRate={ingRate}
               onChangeIng={(e) => setToIng(e.target.value)}
               /* onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
                 e.target.value;
