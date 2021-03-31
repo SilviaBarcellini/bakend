@@ -1,24 +1,21 @@
 import styles from "./row.module.css";
-import { useEffect } from "react";
+import type { Ingredient } from "../../../src/utils/api";
 
-export type RowProps = {
-  option: string;
+type RowProps = {
+  options: Ingredient[];
 };
-const APIData = `/api/ingredients/`;
 
-function Row({ option }: RowProps) {
-  useEffect(() => {
-    fetch(APIData)
-      .then((res) => res.json())
-      .then((data) => console.log(data));
-  }, []);
-
+function Row({ options }: RowProps) {
   return (
     <div>
-      <input className={styles.input} type="number" placeholder="here" />
-      <select>
-        <option value={option}>Option</option>
-      </select>
+      <div>
+        <input type="number" placeholder="type here" />
+        <select>
+          {options.map((ingredient) => {
+            return <option key={ingredient._id}>{ingredient.name}</option>;
+          })}
+        </select>
+      </div>
     </div>
   );
 }
