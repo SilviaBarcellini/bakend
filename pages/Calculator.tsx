@@ -29,9 +29,23 @@ export default function Calculator() {
       <div>
         {ingOptions && (
           <>
-            <Row options={ingOptions} selectedIng={fromIng} />
+            <Row
+              options={ingOptions}
+              selectedIng={fromIng}
+              onChangeIng={(e) => setFromIng(e.target.value)}
+              /* onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
+                e.target.value;
+              }} */
+            />
             <div>=</div>
-            <Row options={ingOptions} selectedIng={toIng} />
+            <Row
+              options={ingOptions}
+              selectedIng={toIng}
+              onChangeIng={(e) => setToIng(e.target.value)}
+              /* onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
+                e.target.value;
+              }} */
+            />
           </>
         )}
       </div>
@@ -39,3 +53,8 @@ export default function Calculator() {
     </div>
   );
 }
+
+/* const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  setCriteria(e.currentTarget.value);
+};
+return <input type="text" value={criteria} onChange={handleChange} />; */
