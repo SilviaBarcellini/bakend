@@ -3,25 +3,31 @@ import type { Ingredient } from "../../../src/utils/api";
 
 type RowProps = {
   options: Ingredient[];
-
   selectedIng: string;
-  ingRate: Ingredient[];
-  onChangeIng: string;
-  //onChangeIng: ChangeEventHandler<HTMLSelectElement>;
+  onSelectChange: (selection: string) => void;
+  amount: number;
+  onAmountChange: (amount: number) => void;
 };
 
-function Row({ options, selectedIng, onChangeIng, ingRate }: RowProps) {
+function Row({
+  options,
+  selectedIng,
+  onSelectChange,
+  amount,
+  onAmountChange,
+}: RowProps) {
   return (
     <div>
       <div>
-        <input type="number" placeholder="type here" />
+        <input
+          value={amount}
+          onChange={(e) => onAmountChange(+e.target.value)}
+          type="number"
+          placeholder="type here"
+        />
         <select
           value={selectedIng}
-          onChange={onChangeIng}
-
-          /* onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
-            e.target.value;
-          }} */
+          onChange={(e) => onSelectChange(e.target.value)}
         >
           {options.map((ingredient) => {
             return (
