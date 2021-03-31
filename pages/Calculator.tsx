@@ -5,12 +5,13 @@ import { useState, useEffect } from "react";
 
 export default function Calculator() {
   const [ingOptions, setIngOptions] = useState([]);
-  const [fromIng, setFromIng] = useState();
-  const [toIng, setToIng] = useState();
-  const [exchangeRate, setExchangeRate] = useState();
-  const [amount, setAmount] = useState(1);
-  const [amountFromIng, setAmountFromIng] = useState(true);
-  const [ingRate, setIngRate] = useState([]);
+  const [fromIng, setFromIng] = useState(null);
+  const [amountFromIng, setAmountFromIng] = useState<number>(1);
+  const [toIng, setToIng] = useState(null);
+  const [amountToIng, setAmountToIng] = useState<number>(null);
+  //const [exchangeRate, setExchangeRate] = useState(null);
+
+  //const [ingRate, setIngRate] = useState([]);
 
   useEffect(() => {
     const getIngredients = async () => {
@@ -20,7 +21,7 @@ export default function Calculator() {
 
       setIngOptions(ingOptions);
       setFromIng(basicIng.name);
-      setToIng(ingOptions);
+      setToIng(basicIng.name);
       console.log(basicIng.name);
     };
     getIngredients();
@@ -35,23 +36,18 @@ export default function Calculator() {
           <>
             <Row
               options={ingOptions}
+              onAmountChange={setAmountFromIng}
+              amount={amountFromIng}
+              onSelectChange={setFromIng}
               selectedIng={fromIng}
-              ingRate={ingRate}
-              onChangeIng={(e) => setFromIng(e.target.value)}
-
-              /* onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
-                e.target.value;
-              }} */
             />
             <div>=</div>
             <Row
               options={ingOptions}
+              onAmountChange={setAmountToIng}
+              amount={amountToIng}
+              onSelectChange={setToIng}
               selectedIng={toIng}
-              ingRate={ingRate}
-              onChangeIng={(e) => setToIng(e.target.value)}
-              /* onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
-                e.target.value;
-              }} */
             />
           </>
         )}
@@ -60,8 +56,3 @@ export default function Calculator() {
     </div>
   );
 }
-
-/* const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-  setCriteria(e.currentTarget.value);
-};
-return <input type="text" value={criteria} onChange={handleChange} />; */
