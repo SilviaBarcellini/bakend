@@ -19,7 +19,6 @@ function Form() {
   useEffect(() => {
     getIngredients();
   }, []);
-
   const getIngredients = async () => {
     const response = await fetch(`/api/ingredients/`);
     const ingredients = await response.json();
