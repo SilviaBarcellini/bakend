@@ -1,4 +1,3 @@
-import styles from "../styles/Calculator.module.css";
 import Row from "../components/calculator/rows/row";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";

@@ -1,4 +1,3 @@
-import styles from "./row.module.css";
 import type { Ingredient } from "../../../src/utils/api";
 
 type RowProps = {
