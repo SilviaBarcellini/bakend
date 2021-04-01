@@ -5,12 +5,23 @@ import { useState, useEffect } from "react";
 
 export default function Calculator() {
   const [ingOptions, setIngOptions] = useState([]);
+  const [fromIng, setFromIng] = useState(null);
+  const [amountFromIng, setAmountFromIng] = useState<number>(1);
+  const [toIng, setToIng] = useState(null);
+  const [amountToIng, setAmountToIng] = useState<number>(null);
+  const [ingRate, setIngRate] = useState(null);
 
   useEffect(() => {
     const getIngredients = async () => {
       const response = await fetch(`/api/ingredients/`);
       const ingOptions = await response.json();
+      const basicIng = ingOptions[1];
+      const notBasicIng = ingOptions[5];
       setIngOptions(ingOptions);
+      setFromIng(basicIng.name);
+      setToIng(basicIng.name);
+      setIngRate(ingOptions.inst);
+      console.log(basicIng.inst);
     };
     getIngredients();
   }, []);
@@ -22,9 +33,21 @@ export default function Calculator() {
       <div>
         {ingOptions && (
           <>
-            <Row options={ingOptions} />
+            <Row
+              options={ingOptions}
+              onAmountChange={setAmountFromIng}
+              amount={amountFromIng}
+              onSelectChange={setFromIng}
+              selectedIng={fromIng}
+            />
             <div>=</div>
-            <Row options={ingOptions} />
+            <Row
+              options={ingOptions}
+              onAmountChange={setAmountToIng}
+              amount={amountToIng}
+              onSelectChange={setToIng}
+              selectedIng={toIng}
+            />
           </>
         )}
       </div>
