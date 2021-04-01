@@ -9,20 +9,19 @@ export default function Calculator() {
   const [amountFromIng, setAmountFromIng] = useState<number>(1);
   const [toIng, setToIng] = useState(null);
   const [amountToIng, setAmountToIng] = useState<number>(null);
-  //const [exchangeRate, setExchangeRate] = useState(null);
-
-  //const [ingRate, setIngRate] = useState([]);
+  const [ingRate, setIngRate] = useState(null);
 
   useEffect(() => {
     const getIngredients = async () => {
       const response = await fetch(`/api/ingredients/`);
       const ingOptions = await response.json();
       const basicIng = ingOptions[1];
-
+      const notBasicIng = ingOptions[5];
       setIngOptions(ingOptions);
       setFromIng(basicIng.name);
       setToIng(basicIng.name);
-      console.log(basicIng.name);
+      setIngRate(ingOptions.inst);
+      console.log(basicIng.inst);
     };
     getIngredients();
   }, []);
