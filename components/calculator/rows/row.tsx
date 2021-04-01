@@ -1,4 +1,3 @@
-//import { ChangeEventHandler } from "react";
 import type { Ingredient } from "../../../src/utils/api";
 
 type RowProps = {
