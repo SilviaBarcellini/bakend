@@ -1,5 +1,4 @@
 import type { Ingredient } from "../../../src/utils/api";
-import { getSugars } from "../../../src/utils/api";
 
 type RowProps = {
   options: Ingredient[];
