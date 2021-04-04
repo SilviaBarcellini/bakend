@@ -1,7 +1,6 @@
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -56,6 +55,7 @@
   color: var(--primary-color);
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 .span {
@@ -69,4 +69,13 @@
   color: var(--secondary-color);
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
+}
+
+.resultContainer {
+  background-color: var(--footer);
+  display: flex;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 50%;
 }
