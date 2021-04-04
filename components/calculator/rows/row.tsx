@@ -1,4 +1,5 @@
 import type { Ingredient } from "../../../src/utils/api";
+import styles from "./row.module.css";
 
 type RowProps = {
   options: Ingredient[];
@@ -13,6 +14,7 @@ function Row({ options, selectedIng, onSelectChange }: RowProps) {
         <select
           value={selectedIng}
           onChange={(e) => onSelectChange(e.target.value)}
+          className={styles.row}
         >
           {options
             .filter((ingredient) => ingredient.family === "Sugars")
