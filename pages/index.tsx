@@ -36,6 +36,11 @@ export default function Home() {
                 <Btn label="Calculate!!" />
               </a>
             </Link>
+            <Link href="/Liquids">
+              <a>
+                <Btn label="I am out of Milk 🥛!!" />
+              </a>
+            </Link>
           </div>
         </div>
         <footer className={styles.footer}>
