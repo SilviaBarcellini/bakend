@@ -20,7 +20,3 @@ function PopUp({ label, content, handleClose }: PopUpProps) {
 }
 
 export default PopUp;
-
-/* function Btn({ label }: BtnProps) {
-    return <button className={styles.btn}>{label}</button>;
-  } */
