@@ -1,6 +1,8 @@
 import Row from "../components/calculator/rows/row";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
+import Welcome from "../components/welcome/welcome";
+
 import { useState, useEffect } from "react";
 import styles from "../styles/Sugars.module.css";
 
@@ -41,7 +43,7 @@ export default function SugarCalculator() {
     <div>
       <Header logo="bakend" imageSrc="/donuts.svg" />
       <div className={styles.container}>
-        <h1 className={styles.title}>Welcome to the Sugar Calculator! 🍭</h1>
+        <Welcome label="Sugars 🍭" />
         {ingOptions && (
           <div>
             <input
