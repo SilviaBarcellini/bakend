@@ -1,0 +1,21 @@
+.box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: var(--placeholder-BG-color);
+  border-radius: 20px;
+  padding: 1.3rem;
+  border: 2px solid var(--primary-color);
+}
+
+.esc {
+  cursor: pointer;
+  background-color: skyblue;
+  padding: 0.5rem;
+  border-radius: 20%;
+  text-align: center;
+  border: 2px solid var(--secondary-color);
+  font-size: 20px;
+}
