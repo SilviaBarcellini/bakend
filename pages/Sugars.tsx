@@ -10,6 +10,7 @@ export default function SugarCalculator() {
   const [toIng, setToIng] = useState(null);
   const [amount, setAmount] = useState<number>(1);
   const [total, setTotal] = useState(amount);
+  const [resultMsg, setResultMsg] = useState("Solution will apper here");
 
   useEffect(() => {
     const getIngredients = async () => {
@@ -24,8 +25,16 @@ export default function SugarCalculator() {
     getIngredients();
   }, []);
 
+  const solution = (
+    <p>
+      You can substitute <span className={styles.span}>{amount}</span>
+      grams of sugar with <span className={styles.span}>{total}</span>
+      of <span className={styles.span}>{toIng}</span>!
+    </p>
+  );
   function calculateTotal() {
     setTotal((amount * 75) / 100);
+    setResultMsg(solution);
   }
 
   return (
@@ -40,7 +49,6 @@ export default function SugarCalculator() {
               type="number"
               value={amount}
               onChange={(e) => setAmount(+e.target.value)}
-              placeholder="type how much sugar"
             />
             <div>
               <Row
@@ -52,15 +60,12 @@ export default function SugarCalculator() {
           </div>
         )}
 
-        <button className={styles.btn} onClick={calculateTotal}>
-          Calc!
+        <button type="submit" className={styles.btn} onClick={calculateTotal}>
+          Go!!
         </button>
-
-        <h2 className={styles.result}>
-          You can substitute <span className={styles.span}>{amount}</span> grams
-          of sugar with <span className={styles.span}>{total}</span>
-          of <span className={styles.span}>{toIng}</span>!
-        </h2>
+        <div className={styles.resultContainer}>
+          <h2 className={styles.result}>{resultMsg}</h2>
+        </div>
       </div>
 
       <Footer homeIcon="/home.svg" favsIcon="/heartf.svg" />
