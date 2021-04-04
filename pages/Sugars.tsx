@@ -2,6 +2,7 @@ import Row from "../components/calculator/rows/row";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import { useState, useEffect } from "react";
+import styles from "../styles/Sugars.module.css";
 
 export default function SugarCalculator() {
   const [ingOptions, setIngOptions] = useState([]);
@@ -30,29 +31,38 @@ export default function SugarCalculator() {
   return (
     <div>
       <Header logo="bakend" imageSrc="/donuts.svg" />
-      <h1>Welcome to the Sugar Calculator! 🍭</h1>
-      {ingOptions && (
-        <div>
-          <input
-            type="number"
-            value={amount}
-            onChange={(e) => setAmount(+e.target.value)}
-            placeholder="type how much sugar"
-          />
-          <Row
-            options={ingOptions}
-            onSelectChange={setToIng}
-            selectedIng={toIng}
-          />
-        </div>
-      )}
+      <div className={styles.container}>
+        <h1 className={styles.title}>Welcome to the Sugar Calculator! 🍭</h1>
+        {ingOptions && (
+          <div>
+            <input
+              className={styles.input}
+              type="number"
+              value={amount}
+              onChange={(e) => setAmount(+e.target.value)}
+              placeholder="type how much sugar"
+            />
+            <div>
+              <Row
+                options={ingOptions}
+                onSelectChange={setToIng}
+                selectedIng={toIng}
+              />
+            </div>
+          </div>
+        )}
 
-      <button onClick={calculateTotal}>Calc!</button>
+        <button className={styles.btn} onClick={calculateTotal}>
+          Calc!
+        </button>
 
-      <h2>
-        You can substitute {amount} grams of sugar with
-        {total} of <span>{toIng}</span>!
-      </h2>
+        <h2 className={styles.result}>
+          You can substitute <span className={styles.span}>{amount}</span> grams
+          of sugar with <span className={styles.span}>{total}</span>
+          of <span className={styles.span}>{toIng}</span>!
+        </h2>
+      </div>
+
       <Footer homeIcon="/home.svg" favsIcon="/heartf.svg" />
     </div>
   );
