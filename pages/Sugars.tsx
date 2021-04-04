@@ -12,7 +12,7 @@ export default function SugarCalculator() {
   const [toIng, setToIng] = useState(null);
   const [amount, setAmount] = useState<number>(1);
   const [total, setTotal] = useState(amount);
-  const [resultMsg, setResultMsg] = useState("Solution will apper here");
+  const [resultMsg, setResultMsg] = useState("Solution will appear here");
 
   useEffect(() => {
     const getIngredients = async () => {
@@ -22,7 +22,6 @@ export default function SugarCalculator() {
       //const ingRate = toIng.inst;
       setIngOptions(ingOptions);
       setToIng(basicIng.name);
-      console.log(ingOptions);
     };
     getIngredients();
   }, []);
