@@ -1,0 +1,6 @@
+.welcome {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
