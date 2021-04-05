@@ -36,6 +36,11 @@ export default function Home() {
                 <Btn label="Calculate!!" />
               </a>
             </Link>
+            <Link href="/Locals">
+              <a>
+                <Btn label="Local Storage 🌈💝" />
+              </a>
+            </Link>
           </div>
         </div>
         <footer className={styles.footer}>
