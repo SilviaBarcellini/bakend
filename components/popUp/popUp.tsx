@@ -3,7 +3,7 @@ import styles from "./popUp.module.css";
 export type PopUpProps = {
   label: string;
   content: string;
-  handleClose: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onClose: (event: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
 function PopUp({ label, content, handleClose }: PopUpProps) {
