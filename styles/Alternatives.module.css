@@ -60,9 +60,9 @@
 
 .span {
   margin: 1rem;
-  background-color: rgba(0, 191, 255, 0.13);
-  border-radius: 50%;
-  padding: 0.4rem;
+  background-color: rgba(0, 191, 255, 0.787);
+  border-radius: 20%;
+  padding: 0.2rem;
 }
 
 .result {
@@ -78,4 +78,10 @@
   margin: 1rem;
   padding: 1rem;
   border-radius: 50%;
+}
+
+.solution {
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
 }
