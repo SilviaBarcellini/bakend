@@ -7,7 +7,6 @@ import styles from "../styles/Alternatives.module.css";
 
 export default function SugarCalculator() {
   const [ingOptions, setIngOptions] = useState([]);
-  //const [ingInst, setIngInst] = useState();
   const [toIng, setToIng] = useState<string>(null);
   const [amount, setAmount] = useState<number>(1);
   const [total, setTotal] = useState<number>(null);
@@ -17,7 +16,6 @@ export default function SugarCalculator() {
       const response = await fetch(`/api/ingredients/`);
       const ingOptions = await response.json();
       const basicIng = ingOptions[1];
-      //const ingRate = toIng.inst;
       setIngOptions(ingOptions);
       setToIng(basicIng.name);
       console.log(ingOptions);
