@@ -1,9 +1,8 @@
-//import styles from "../styles/Form.module.css";
+import styles from "../styles/Form.module.css";
+import { useEffect, useState } from "react";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
-import Form from "../components/forms/form";
-import { useEffect, useState } from "react";
-import styles from "../styles/Home.module.css";
+import CardMain from "../components/cardMain/cardMain";
 import { searchIngs } from "../utils/api";
 
 interface Ing {
@@ -45,36 +44,40 @@ export default function Search() {
 
   return (
     <div className={styles.container}>
-      <main className={styles.main}>
-        <label>
-          Search{" "}
-          <input
-            type="text"
-            placeholder="name"
-            value={search}
-            onChange={(event) => setSearch(event.target.value)}
-          />
-        </label>
-        <ul>
+      <main>
+        <Header logo="bakend" imageSrc="/donuts.svg" />
+        <input
+          className={styles.input}
+          type="text"
+          placeholder="name"
+          value={search}
+          onChange={(event) => setSearch(event.target.value)}
+        />
+        <div className={styles.list}>
           {ings?.map((ing) => (
-            <li key={ing._id}>
-              key={ing.name}
-              name={ing.name}
-              image={ing.image}
-              fat={ing.fat}
-              carbs={ing.carbs}
-              protein={ing.protein}
-              family={ing.family}
-              vegan={ing.vegan}
-              vegetarian={ing.vegetarian}
-              glutenFree={ing.glutenFree}
-              dairyFree={ing.dairyFree}
-              nutsFree={ing.glutenFree}
-              soyFree={ing.soyFree}
-            </li>
+            <div className={styles.card} key={ing._id}>
+              <CardMain
+                key={ing.name}
+                name={ing.name}
+                image={ing.image}
+                fat={ing.fat}
+                carbs={ing.carbs}
+                protein={ing.protein}
+                family={ing.family}
+                vegan={ing.vegan}
+                vegetarian={ing.vegetarian}
+                glutenFree={ing.glutenFree}
+                dairyFree={ing.dairyFree}
+                nutsFree={ing.glutenFree}
+                soyFree={ing.soyFree}
+              />
+            </div>
           ))}
-        </ul>
+        </div>
       </main>
+      <footer className={styles.footer}>
+        <Footer homeIcon="/home.svg" favsIcon="/heartf.svg" />
+      </footer>
     </div>
   );
 }
