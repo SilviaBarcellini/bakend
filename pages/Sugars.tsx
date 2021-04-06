@@ -42,7 +42,7 @@ export default function SugarCalculator() {
     <div>
       <Header logo="bakend" imageSrc="/donuts.svg" />
       <div className={styles.container}>
-        <Welcome label="Sugars 🍭" />
+        <Welcome label="SUGARS 🍭" />
         {ingOptions && (
           <div>
             <input
