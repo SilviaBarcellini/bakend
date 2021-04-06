@@ -1,34 +1,15 @@
-import Row from "../components/calculator/rows/row";
-import Header from "../components/header/header";
-import Footer from "../components/footer/footer";
-import { useState, useEffect } from "react";
+import styles from "../styles/Splash.module.css";
+import Logo from "../components/logo/logo";
 
-export default function Calculator() {
-  const [ingOptions, setIngOptions] = useState([]);
-
-  useEffect(() => {
-    const getIngredients = async () => {
-      const response = await fetch(`/api/ingredients/`);
-      const ingOptions = await response.json();
-      setIngOptions(ingOptions);
-    };
-    getIngredients();
-  }, []);
-
+export default function SplashPage() {
   return (
     <div>
-      <Header logo="bakend" imageSrc="/donuts.svg" />
-      <h1>Calculate :)</h1>
-      <div>
-        {ingOptions && (
-          <>
-            <Row options={ingOptions} />
-            <div>=</div>
-            <Row options={ingOptions} />
-          </>
-        )}
+      <div className={styles.logo}>
+        <Logo logo="bakend" size="big" />
+        <div className={styles.link}>
+          <a href="/">press here to continue</a>
+        </div>
       </div>
-      <Footer homeIcon="/home.svg" favsIcon="/heartf.svg" />
     </div>
   );
 }

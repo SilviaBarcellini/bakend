@@ -1,0 +1,81 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: var(--button-main);
+  background-image: linear-gradient(
+    to right,
+    var(--gradient-1) 0%,
+    var(--secondary-color) 51%,
+    var(--gradient-3) 100%
+  );
+  border: 1px solid;
+  border-radius: 20px;
+  font-family: "Paytone One", sans-serif;
+  font-size: 1.3rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.btn:hover {
+  background-position: right center;
+}
+
+.input {
+  width: 100%;
+  margin: 1.5rem 0 1rem 0;
+  padding: 1.5rem;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #3c3433;
+  background-image: linear-gradient(
+    to bottom,
+    #ffedfa 0%,
+    #ffdff6 51%,
+    #ffc7f1 100%
+  );
+  box-shadow: 0 0 20px #559fff;
+  border: 1px solid;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+}
+
+.title {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.span {
+  margin: 1rem;
+  background-color: rgba(0, 191, 255, 0.13);
+  border-radius: 50%;
+  padding: 0.4rem;
+}
+
+.result {
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.resultContainer {
+  background-color: var(--footer);
+  display: flex;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
