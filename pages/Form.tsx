@@ -9,9 +9,23 @@ import { searchIngs } from "../utils/api";
 interface Ing {
   _id: string;
   name: string;
+  image: string;
+  fat: number;
+  carbs: number;
+  protein: number;
+  family: "Sugars" | "Fats" | "Liquids" | "else";
+  vegan: boolean;
+  vegetarian: boolean;
+  glutenFree: boolean;
+  dairyFree: boolean;
+  nutsFree: boolean;
+  soyFree: boolean;
+  inst: number;
+  liq: number;
+  sweetPower: number;
 }
 
-export default function Home() {
+export default function Search() {
   const [search, setSearch] = useState<string>("");
   const [ings, setIngs] = useState<Ing[]>(null);
 
@@ -43,7 +57,21 @@ export default function Home() {
         </label>
         <ul>
           {ings?.map((ing) => (
-            <li key={ing._id}>{ing.name}</li>
+            <li key={ing._id}>
+              key={ing.name}
+              name={ing.name}
+              image={ing.image}
+              fat={ing.fat}
+              carbs={ing.carbs}
+              protein={ing.protein}
+              family={ing.family}
+              vegan={ing.vegan}
+              vegetarian={ing.vegetarian}
+              glutenFree={ing.glutenFree}
+              dairyFree={ing.dairyFree}
+              nutsFree={ing.glutenFree}
+              soyFree={ing.soyFree}
+            </li>
           ))}
         </ul>
       </main>
