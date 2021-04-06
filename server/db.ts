@@ -1,4 +1,4 @@
-import { MongoClient } from "mongodb";
+import { b, MongoClient } from "mongodb";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 let client = null;
