@@ -21,7 +21,7 @@ function Row({ options, selectedIng, onSelectChange }: RowProps) {
             .map((filteredIngredient) => {
               return (
                 <option key={filteredIngredient._id}>
-                  {filteredIngredient.name} {/* {ingredient.inst} */}
+                  {filteredIngredient.name}
                 </option>
               );
             })}
