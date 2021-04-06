@@ -4,3 +4,10 @@
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
+
+.instructions {
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
