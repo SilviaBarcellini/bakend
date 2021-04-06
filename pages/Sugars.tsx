@@ -2,17 +2,15 @@ import Row from "../components/calculator/rows/row";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import Welcome from "../components/welcome/welcome";
-
 import { useState, useEffect } from "react";
 import styles from "../styles/Sugars.module.css";
 
 export default function SugarCalculator() {
   const [ingOptions, setIngOptions] = useState([]);
   //const [ingInst, setIngInst] = useState();
-  const [toIng, setToIng] = useState(null);
+  const [toIng, setToIng] = useState<string>(null);
   const [amount, setAmount] = useState<number>(1);
-  const [total, setTotal] = useState(amount);
-  const [resultMsg, setResultMsg] = useState("Solution will appear here");
+  const [total, setTotal] = useState<number>(null);
 
   useEffect(() => {
     const getIngredients = async () => {
@@ -22,20 +20,14 @@ export default function SugarCalculator() {
       //const ingRate = toIng.inst;
       setIngOptions(ingOptions);
       setToIng(basicIng.name);
+      console.log(ingOptions);
     };
     getIngredients();
   }, []);
 
-  const solution = (
-    <p>
-      You can substitute <span className={styles.span}>{amount}</span>
-      grams of sugar with <span className={styles.span}>{total}</span>
-      of <span className={styles.span}>{toIng}</span>!
-    </p>
-  );
   function calculateTotal() {
-    setTotal((amount * 75) / 100);
-    setResultMsg(solution);
+    const ing = ingOptions.find((ing) => ing.name === toIng);
+    setTotal((amount * ing.inst) / 100);
   }
 
   return (
@@ -61,11 +53,19 @@ export default function SugarCalculator() {
           </div>
         )}
 
-        <button type="submit" className={styles.btn} onClick={calculateTotal}>
+        <button className={styles.btn} onClick={calculateTotal}>
           Go!!
         </button>
         <div className={styles.resultContainer}>
-          <h2 className={styles.result}>{resultMsg}</h2>
+          {!total ? (
+            <h2 className={styles.result}>Solution will appear here</h2>
+          ) : (
+            <p>
+              You can substitute <span className={styles.span}>{amount}</span>
+              grams of sugar with <span className={styles.span}>{total}</span>
+              of <span className={styles.span}>{toIng}</span>!
+            </p>
+          )}
         </div>
       </div>
 
