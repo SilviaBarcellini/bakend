@@ -1,41 +1,53 @@
-import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import styles from "./form.module.css";
 //import { getIngredient } from "../../src/utils/api";
 import CardMain from "../cardMain/cardMain";
 
 function Search() {
-  const [ingredients, setIngredients] = useState([]);
-  const [filter, setFilter] = useState("");
+  const [searchIng, setSearchIng] = useState("");
+  const [ings, setIngs] = useState([]);
 
-  useEffect(() => {
-    getIngredients();
-  }, []);
-  const getIngredients = async () => {
-    const response = await fetch(`/api/ingredients/`);
-    const ingredients = await response.json();
-    setIngredients(ingredients);
-    console.log(ingredients);
+  const handleChange = (value) => {
+    setSearchIng(value);
   };
 
-  const updateSearch = (e) => {
-    setFilter(e.target.value);
+  useEffect(() => {
+    getIngs();
+  }, []);
+  const getIngs = async () => {
+    const response = await fetch(`/api/ingredients`);
+    const ings = await response.json();
+    const filteredIngs = setIngs(ings);
+    console.log(ings);
+  };
+
+  const filterIng = (value) => {
+    const lowerCaseValue = value.toLowerCase().trim();
+    if (!lowerCaseValue) {
+      setIngs([]);
+    } else {
+      const filteredIngs = [].filter((item) => {
+        return Object.keys(item).some((key) => {
+          return item[key].toString().toLowerCase().includes(lowerCaseValue);
+        });
+      });
+      setIngs(filteredIngs);
+      console.log(ings);
+    }
   };
 
   return (
     <div className={styles.container}>
       <input
         className={styles.input}
-        placeholder="today I am out of ..."
+        placeholder="type here"
         type="text"
-        value={filter}
-        onChange={updateSearch}
+        value={searchIng}
+        onChange={(e) => handleChange(e.target.value)}
       />
-      {/* <button className={styles.button} type="submit">
-        Go!
-      </button> */}
       <div className={styles.cardMain}>
-        {ingredients.map((ingredient) => (
+        {ings.length === 0 && "No item found :("}
+        {ings.map((ingredient) => (
           <CardMain
             key={ingredient.name}
             fav={ingredient.fav}
