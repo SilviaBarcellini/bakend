@@ -1,14 +1,28 @@
 import styles from "./addFavs.module.css";
+import useLocalStorage from "../../hooks/localStorage";
+import { Ingredient } from "../../src/utils/api";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 
-export type AddFavsProps = {
-  isFav: boolean;
-  image: string;
-};
+function AddFavs() {
+  const router = useRouter();
+  const { name: nameQuery } = router.query;
+  const [fav, setFav] = useState(false);
+  console.log(name);
 
-function AddFavs({ isFav, image, ...props }: AddFavsProps) {
+  useEffect(() => {
+    if (fav) {
+      localStorage.setItem("lovedIt", { name });
+    }
+    if (!fav) {
+      localStorage.removeItem("lovedIt");
+    }
+  }, [fav]);
+
   return (
-    <button className={`${styles.fav} ${isFav ? styles.isFav : ""}`} {...props}>
-      <img src={image} alt="" />
+    <button onClick={() => setFav(!fav)} className={`${styles.fav}`}>
+      {fav ? "yes" : "no"}
+      {/* <img src={image} alt="" /> */}
     </button>
   );
 }
