@@ -1,4 +1,4 @@
-import Row from "../components/calculator/rows/row";
+import Row from "../components/calculator/rows/rowMilk";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import Welcome from "../components/welcome/welcome";
@@ -32,7 +32,7 @@ export default function SugarCalculator() {
     <div>
       <Header logo="bakend" imageSrc="/donuts.svg" />
       <div className={styles.container}>
-        <Welcome label="sugar 🍭" />
+        <Welcome label="Milk 🥛" />
         {ingOptions && (
           <div>
             <input
@@ -60,8 +60,8 @@ export default function SugarCalculator() {
           ) : (
             <p className={styles.solution}>
               You can substitute <span className={styles.span}>{amount}</span>
-              grams of sugar with <span className={styles.span}>{total}</span>
-              of <span className={styles.span}>{toIng}</span>! Happy baking!🧁
+              grams of milk with <span className={styles.span}>{total}</span>
+              of <span className={styles.span}>{toIng}</span>Happy baking!🧁
             </p>
           )}
         </div>

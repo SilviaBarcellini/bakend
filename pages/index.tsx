@@ -20,20 +20,32 @@ export default function Home() {
           <div>
             <Greetings />
           </div>
+          <div className={styles.calc}>
+            <Link href="/Sugars">
+              <a>
+                <Btn label="I am out of Sugar !! 🍭" />
+              </a>
+            </Link>
+            <Link href="/Liquids">
+              <a>
+                <Btn label="I am out of Milk !! 🥛" />
+              </a>
+            </Link>
+            <Link href="/Fats">
+              <a>
+                <Btn label="I am out of Butter !! 🧈" />
+              </a>
+            </Link>
+          </div>
           <div className={styles.btn}>
             <Link href="/Form">
               <a>
-                <Btn label="Today I am out of ..." />
+                <Btn label="Explore 🦋" />
               </a>
             </Link>
             <Link href="/MainCard">
               <a>
                 <Btn label="Discover New Ingredients!" />
-              </a>
-            </Link>
-            <Link href="/Sugars">
-              <a>
-                <Btn label="Calculate!! 🍭" />
               </a>
             </Link>
           </div>

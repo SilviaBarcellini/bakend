@@ -17,7 +17,7 @@ function Row({ options, selectedIng, onSelectChange }: RowProps) {
           className={styles.row}
         >
           {options
-            .filter((ingredient) => ingredient.family === "Sugars")
+            .filter((ingredient) => ingredient.family === "Liquids")
             .map((filteredIngredient) => {
               return (
                 <option key={filteredIngredient._id}>
