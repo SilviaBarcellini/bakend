@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import styles from "./form.module.css";
 //import { getIngredient } from "../../src/utils/api";
@@ -37,6 +38,7 @@ function Search() {
         {ingredients.map((ingredient) => (
           <CardMain
             key={ingredient.name}
+            fav={ingredient.fav}
             name={ingredient.name}
             image={ingredient.image}
             fat={ingredient.fat}

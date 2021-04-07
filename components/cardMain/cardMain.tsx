@@ -2,6 +2,7 @@ import styles from "./cardMain.module.css";
 
 export type CardMainProps = {
   image: string;
+  fav: boolean;
   name: string;
   fat: number;
   carbs: number;
@@ -17,6 +18,7 @@ export type CardMainProps = {
 
 function CardMain({
   name,
+  fav,
   image,
   fat,
   carbs,
@@ -32,6 +34,7 @@ function CardMain({
   return (
     <div className={styles.cardMain}>
       <div className={styles.cardIntro}>
+        <button className={styles.fav}>{fav ? "✅" : "⛔️"}</button>
         <h2 className={styles.name}>{name}</h2>
         <h3>{family}</h3>
         <img className={styles.image} src={image} alt="" />
