@@ -1,22 +1,22 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import AddFavs, { AddFavsProps } from "./addFavs";
+import AddFavs from "./addFavs";
 
 export default {
   title: "Common/addFavs",
   component: AddFavs,
 } as Meta;
 
-const Template: Story<AddFavsProps> = (args) => <AddFavs {...args} />;
+const Template: Story = (args) => <AddFavs {...args} />;
 
 export const isFav = Template.bind({});
 isFav.args = {
-  isFav: true,
-  image: "/liked.svg",
+  fav: true,
+  /* image: "/liked.svg", */
 };
 
 export const addFav = Template.bind({});
 addFav.args = {
-  isFav: false,
-  image: "/like.svg",
+  fav: false,
+  /* image: "/like.svg", */
 };
