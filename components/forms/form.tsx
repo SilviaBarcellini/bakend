@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "./form.module.css";
-//import { getIngredient } from "../../src/utils/api";
 import CardMain from "../cardMain/cardMain";
 
 function Search() {
