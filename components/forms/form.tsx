@@ -1,18 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useForm, SubmitHandler } from "react-hook-form";
 import styles from "./form.module.css";
 //import { getIngredient } from "../../src/utils/api";
 import CardMain from "../cardMain/cardMain";
 
-type FormProps = {
-  itemRequired: string;
-};
-
-function Form() {
-  const { register, handleSubmit, errors } = useForm<FormProps>();
-  const onSubmit: SubmitHandler<FormProps> = (data) => {
-    alert(data);
-  };
+function Search() {
   const [ingredients, setIngredients] = useState([]);
   const [filter, setFilter] = useState("");
 
@@ -32,21 +23,16 @@ function Form() {
 
   return (
     <div className={styles.container}>
-      <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
-        <input
-          className={styles.input}
-          placeholder="today I am out of ..."
-          name="itemRequired"
-          ref={register({ required: true, minLength: 4 })}
-          type="text"
-          value={filter}
-          onChange={updateSearch}
-        />
-        {errors.itemRequired && <p>This field is required</p>}
-        <button className={styles.button} type="submit">
-          Go!
-        </button>
-      </form>
+      <input
+        className={styles.input}
+        placeholder="today I am out of ..."
+        type="text"
+        value={filter}
+        onChange={updateSearch}
+      />
+      {/* <button className={styles.button} type="submit">
+        Go!
+      </button> */}
       <div className={styles.cardMain}>
         {ingredients.map((ingredient) => (
           <CardMain
@@ -70,4 +56,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default Search;
