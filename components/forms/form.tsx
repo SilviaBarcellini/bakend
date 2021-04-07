@@ -30,10 +30,6 @@ function Form() {
     setFilter(e.target.value);
   };
 
-  const filteredIngredients = ingredients.filter((ingredient) =>
-    ingredient.name.startsWith(filter)
-  );
-
   return (
     <div className={styles.container}>
       <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
@@ -52,7 +48,7 @@ function Form() {
         </button>
       </form>
       <div className={styles.cardMain}>
-        {filteredIngredients.map((ingredient) => (
+        {ingredients.map((ingredient) => (
           <CardMain
             key={ingredient.name}
             name={ingredient.name}
