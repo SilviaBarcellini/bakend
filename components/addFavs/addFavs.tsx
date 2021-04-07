@@ -8,7 +8,6 @@ function AddFavs() {
   const router = useRouter();
   const { name: nameQuery } = router.query;
   const [fav, setFav] = useState(false);
-  console.log(name);
 
   useEffect(() => {
     if (fav) {
