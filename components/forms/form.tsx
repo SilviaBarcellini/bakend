@@ -12,11 +12,13 @@ function Search() {
 
   useEffect(() => {
     getIngs();
-  }, []);
+  }, [searchIng]);
   const getIngs = async () => {
-    const response = await fetch(`/api/ingredients`);
+    const response = await fetch(
+      `/api/ingredients${searchIng ? `?search=${searchIng}` : ""}`
+    );
     const ings = await response.json();
-    const filteredIngs = setIngs(ings);
+    setIngs(ings);
     console.log(ings);
   };
 
