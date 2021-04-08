@@ -15,7 +15,7 @@ function Theme() {
       onClick={() => setActiveTheme(inactiveTheme)}
       className={`${styles.btn}`}
     >
-      {inactiveTheme ? "☀️" : "🌙"}
+      {inactiveTheme ? "🌈" : "🌈"}
     </button>
   );
 }
