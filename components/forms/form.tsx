@@ -49,7 +49,6 @@ function Search() {
         {ings.map((ingredient) => (
           <CardMain
             key={ingredient.name}
-            fav={ingredient.fav}
             name={ingredient.name}
             image={ingredient.image}
             fat={ingredient.fat}
