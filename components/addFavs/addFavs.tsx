@@ -10,9 +10,9 @@ function AddFavs() {
   const [fav, setFav] = useState(false);
 
   useEffect(() => {
-    if (fav) {
+    /* if (fav) {
       localStorage.setItem("lovedIt", { name });
-    }
+    } */
     if (!fav) {
       localStorage.removeItem("lovedIt");
     }
