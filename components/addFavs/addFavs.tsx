@@ -1,6 +1,4 @@
 import styles from "./addFavs.module.css";
-import useLocalStorage from "../../hooks/localStorage";
-import { Ingredient } from "../../src/utils/api";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 
@@ -21,7 +19,6 @@ function AddFavs() {
   return (
     <button onClick={() => setFav(!fav)} className={`${styles.fav}`}>
       {fav ? "yes" : "no"}
-      {/* <img src={image} alt="" /> */}
     </button>
   );
 }
