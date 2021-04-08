@@ -45,7 +45,7 @@ export default function MainCard() {
         </div>
       </div>
       <footer className={styles.footer}>
-        <Footer homeIcon="/home.svg" favsIcon="/heartf.svg" />
+        <Footer homeIcon="/home.svg" />
       </footer>
     </div>
   );
