@@ -51,9 +51,8 @@ export default function Home() {
             </div>
           </main>
         </div>
-        <footer className={styles.footer}>
-          <Footer homeIcon="/home.svg" />
-        </footer>
+
+        <Footer homeIcon="/home.svg" />
       </div>
     </div>
   );
