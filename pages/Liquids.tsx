@@ -4,7 +4,6 @@ import Footer from "../components/footer/footer";
 import Welcome from "../components/welcome/welcome";
 import { useState, useEffect } from "react";
 import styles from "../styles/Alternatives.module.css";
-import Theme from "../components/dark/themeBtn";
 
 export default function SugarCalculator() {
   const [ingOptions, setIngOptions] = useState([]);
