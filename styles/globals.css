@@ -13,8 +13,18 @@ body {
     sans-serif, Quicksand, Paytone One, Shadows Into Light;
 }
 
-body.dark {
-  background: var(--background-dark);
+body[data-theme="light"] {
+  --primary-color: #d13fd6;
+  --secondary-color: #7406c4;
+  --background-color: #d1ffff;
+  --color-bg-toggle: #2d255f;
+}
+
+body[data-theme="dark"] {
+  --primary-color: #ff00a7;
+  --secondary-color: #d1ffff;
+  --background-color: #000;
+  --color-bg-toggle: #00eaff;
 }
 
 a {
@@ -36,12 +46,6 @@ a {
   --gradient-2: #6f22ff;
   --gradient-3: #fb23cd;
   --footer: #9ff4ff;
-  --background-dark: #000;
-  --button-BG-dark: #e100ff;
-  --button-dark: #000;
-  --placeholder-BG-dark: #0400ff;
-  --secondary-color-dark: #d1ffff;
-  --footer-dark: #040661;
 }
 * {
   box-sizing: border-box;
