@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import Btn from "../components/btn/btn";
+import Theme from "../components/dark/themeBtn";
 
 export default function Home() {
   return (
@@ -21,7 +22,8 @@ export default function Home() {
               <Greetings />
             </div>
             <div className={styles.calc}>
-              <Btn label="Dark" />
+              <Theme />
+
               <Link href="/Sugars">
                 <a>
                   <Btn label="I am out of Sugar !! 🍭" />

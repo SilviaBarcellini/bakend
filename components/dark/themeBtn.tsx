@@ -1,19 +1,14 @@
 import styles from "./themeBtn.module.css";
+import { useState } from "react";
 
-export type ThemeBtnProps = {
-  light: boolean;
-};
+function Theme() {
+  const [dark, setDark] = useState(false);
 
-function ThemeBtn({ light, ...props }: ThemeBtnProps) {
   return (
-    <button
-      //onClick={() => setDark(!light)}
-      className={`${styles.btn} ${light ? styles.light : ""}`}
-      {...props}
-    >
-      {light ? "🌙" : "☀️"}
+    <button onClick={() => setDark(!dark)} className={`${styles.btn}`}>
+      {dark ? "☀️" : "🌙"}
     </button>
   );
 }
 
-export default ThemeBtn;
+export default Theme;

@@ -1,6 +1,7 @@
-.light {
+.btn {
+  padding: 2rem;
   color: pink;
-  background: black;
+  background: grey;
 }
 
 .dark {
