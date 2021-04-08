@@ -18,6 +18,12 @@ body[data-theme="light"] {
   --secondary-color: #7406c4;
   --background-color: #d1ffff;
   --color-bg-toggle: #2d255f;
+  --solution: #9ff4ff;
+  --button-main: #effeff;
+  --gradient-1: #f723ff;
+  --gradient-2: #6f22ff;
+  --gradient-3: #fb23cd;
+  --footer: #9ff4ff;
 }
 
 body[data-theme="dark"] {
@@ -25,6 +31,12 @@ body[data-theme="dark"] {
   --secondary-color: #d1ffff;
   --background-color: #000;
   --color-bg-toggle: #00eaff;
+  --solution: #2a0135;
+  --button-main: #190120;
+  --gradient-1: #2088ff;
+  --gradient-2: #945aff;
+  --gradient-3: #0084ff;
+  --footer: #15011b;
 }
 
 a {
