@@ -1,10 +1,4 @@
 .btn {
-  padding: 2rem;
-  color: pink;
-  background: darkgreen;
-}
-
-.dark {
-  color: aquamarine;
-  background: whitesmoke;
+  padding: 1.2rem;
+  background: var(--gradient-1);
 }
