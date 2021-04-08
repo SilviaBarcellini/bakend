@@ -4,6 +4,7 @@ import Footer from "../components/footer/footer";
 import Welcome from "../components/welcome/welcome";
 import { useState, useEffect } from "react";
 import styles from "../styles/Alternatives.module.css";
+import Theme from "../components/dark/themeBtn";
 
 export default function SugarCalculator() {
   const [ingOptions, setIngOptions] = useState([]);
@@ -67,7 +68,7 @@ export default function SugarCalculator() {
         </div>
       </div>
 
-      <Footer homeIcon="/home.svg" favsIcon="/heartf.svg" />
+      <Footer homeIcon="/home.svg" />
     </div>
   );
 }

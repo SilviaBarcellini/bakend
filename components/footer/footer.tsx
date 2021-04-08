@@ -1,19 +1,15 @@
 import styles from "./footer.module.css";
+import Theme from "../dark/themeBtn";
 import Link from "next/link";
 
 export type FooterProps = {
   homeIcon: string;
-  favsIcon: string;
 };
 
-function Footer({ favsIcon, homeIcon }: FooterProps) {
+function Footer({ homeIcon }: FooterProps) {
   return (
     <footer className={styles.footer}>
-      <Link href="#">
-        <a>
-          <img className={styles.favs} src={favsIcon} alt="heart" />
-        </a>
-      </Link>
+      <Theme />
       <Link href="/">
         <a>
           <img className={styles.home} src={homeIcon} alt="home" />

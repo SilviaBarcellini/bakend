@@ -22,8 +22,6 @@ export default function Home() {
               <Greetings />
             </div>
             <div className={styles.calc}>
-              <Theme />
-
               <Link href="/Sugars">
                 <a>
                   <Btn label="I am out of Sugar !! 🍭" />
@@ -55,7 +53,7 @@ export default function Home() {
           </main>
         </div>
         <footer className={styles.footer}>
-          <Footer homeIcon="/home.svg" favsIcon="/heartf.svg" />
+          <Footer homeIcon="/home.svg" />
         </footer>
       </div>
     </div>
