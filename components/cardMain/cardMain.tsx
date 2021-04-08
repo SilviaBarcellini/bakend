@@ -1,4 +1,5 @@
 import styles from "./cardMain.module.css";
+//import AddFavs from "../addFavs/addFavs";
 
 export type CardMainProps = {
   image: string;

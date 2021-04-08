@@ -27,8 +27,17 @@ export async function getCollection(collectioName) {
   return await db.collection(collectioName);
 }
 
-export async function ingredientsList(collectioName) {
-  return await db.collection(collectioName).find().toArray();
+export async function ingredientsList() {
+  return await db.collection("Ingredients").find().toArray();
+}
+
+export async function getIngredients(query) {
+  const ingredientCollection = await getCollection("Ingredients");
+  return await ingredientCollection
+    .find({
+      name: { $regex: query, $options: "i" },
+    })
+    .toArray();
 }
 
 export async function readIngredient(ingredientName) {

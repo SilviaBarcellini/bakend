@@ -1,0 +1,8 @@
+### GET all ingredients 
+GET http://localhost:3000/api/ingredients
+
+### GET specific ingredient
+GET http://localhost:3000/api/ingredients/sugar
+
+###GET request matching with query
+GET http://localhost:3000/api/ingredients?search=SUgar
