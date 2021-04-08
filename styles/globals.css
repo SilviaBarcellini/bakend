@@ -6,10 +6,15 @@ html,
 body {
   background: var(--background-color);
   padding: 0;
+  padding-bottom: 5.5rem;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, "Poppins",
     sans-serif, Quicksand, Paytone One, Shadows Into Light;
+}
+
+body.dark {
+  background: var(--background-dark);
 }
 
 a {
@@ -26,12 +31,17 @@ a {
   --placeholder-default-color: #aa9aa4;
   --primary-color: #ff00a7;
   --secondary-color: #7406c4;
-  --selected-card-color: #000aff;
   --card-background-color: #362f2f;
   --gradient-1: #f723ff;
   --gradient-2: #6f22ff;
   --gradient-3: #fb23cd;
   --footer: #9ff4ff;
+  --background-dark: #000;
+  --button-BG-dark: #e100ff;
+  --button-dark: #000;
+  --placeholder-BG-dark: #0400ff;
+  --secondary-color-dark: #d1ffff;
+  --footer-dark: #040661;
 }
 * {
   box-sizing: border-box;
