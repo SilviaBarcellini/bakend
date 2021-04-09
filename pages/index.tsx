@@ -13,8 +13,8 @@ export default function Home() {
       <div>
         <div className={styles.container}>
           <Head>
-            <title>Create Next App</title>
-            <link rel="icon" href="/favicon.ico" />
+            <title>Bakend</title>
+            <link rel="icon" href="/faviconnn.ico" />
           </Head>
           <main className={styles.main}></main>
           <div>

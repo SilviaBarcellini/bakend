@@ -1,4 +1,5 @@
 import styles from "./footer.module.css";
+import Theme from "../dark/themeBtn";
 import Link from "next/link";
 
 export type FooterProps = {
@@ -8,6 +9,7 @@ export type FooterProps = {
 function Footer({ homeIcon }: FooterProps) {
   return (
     <footer className={styles.footer}>
+      <Theme />
       <Link href="/">
         <a>
           <img className={styles.home} src={homeIcon} alt="home" />

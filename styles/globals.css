@@ -6,10 +6,43 @@ html,
 body {
   background: var(--background-color);
   padding: 0;
+  padding-bottom: 3rem;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, "Poppins",
     sans-serif, Quicksand, Paytone One, Shadows Into Light;
+}
+
+body[data-theme="light"] {
+  --primary-color: #d13fd6;
+  --secondary-color: #7406c4;
+  --background-color: #d1ffff;
+  --color-bg-toggle: #2d255f;
+  --solution: #9ff4ff;
+  --button-main: #effeff;
+  --gradient-1: #f723ff;
+  --gradient-2: #6f22ff;
+  --gradient-3: #fb23cd;
+  --footer: #9ff4ff;
+  --switch-border: #460774;
+  --BG-switch: #25006b;
+  --color-switch: #9ff4ff;
+}
+
+body[data-theme="dark"] {
+  --primary-color: #ff00a7;
+  --secondary-color: #d1ffff;
+  --background-color: #000;
+  --color-bg-toggle: #00eaff;
+  --solution: #5b16aa;
+  --button-main: #190120;
+  --gradient-1: #2088ff;
+  --gradient-2: #945aff;
+  --gradient-3: #0084ff;
+  --footer: #15011b;
+  --switch-border: #f723ff;
+  --BG-switch: #9ff4ff;
+  --color-switch: #cb1bd1;
 }
 
 a {
@@ -26,7 +59,6 @@ a {
   --placeholder-default-color: #aa9aa4;
   --primary-color: #ff00a7;
   --secondary-color: #7406c4;
-  --selected-card-color: #000aff;
   --card-background-color: #362f2f;
   --gradient-1: #f723ff;
   --gradient-2: #6f22ff;
