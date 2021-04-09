@@ -24,6 +24,9 @@ body[data-theme="light"] {
   --gradient-2: #6f22ff;
   --gradient-3: #fb23cd;
   --footer: #9ff4ff;
+  --switch-border: #460774;
+  --BG-switch: #25006b;
+  --color-switch: #9ff4ff;
 }
 
 body[data-theme="dark"] {
@@ -31,12 +34,15 @@ body[data-theme="dark"] {
   --secondary-color: #d1ffff;
   --background-color: #000;
   --color-bg-toggle: #00eaff;
-  --solution: #2a0135;
+  --solution: #5b16aa;
   --button-main: #190120;
   --gradient-1: #2088ff;
   --gradient-2: #945aff;
   --gradient-3: #0084ff;
   --footer: #15011b;
+  --switch-border: #f723ff;
+  --BG-switch: #9ff4ff;
+  --color-switch: #cb1bd1;
 }
 
 a {
