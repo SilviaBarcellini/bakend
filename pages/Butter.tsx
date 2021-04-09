@@ -1,4 +1,5 @@
 import Row from "../components/calculator/rows/rowButter";
+import Head from "next/head";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import Welcome from "../components/welcome/welcome";
@@ -30,6 +31,10 @@ export default function SugarCalculator() {
 
   return (
     <div>
+      <Head>
+        <title>Butter Converter</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header logo="bakend" imageSrc="/donuts.svg" />
       <div className={styles.container}>
         <Welcome label="butter 🧈" />
