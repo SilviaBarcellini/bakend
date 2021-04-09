@@ -1,4 +1,4 @@
-import type { Ingredient } from "../../../src/utils/api";
+import type { Ingredient } from "../../../utils/api";
 import styles from "./row.module.css";
 
 type RowProps = {
