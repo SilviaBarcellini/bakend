@@ -1,10 +1,15 @@
 import styles from "../styles/Form.module.css";
+import Head from "next/head";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 
-export default function MainCard() {
+export default function Credits() {
   return (
     <div>
+      <Head>
+        <title>Credits</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div>
         <Header logo="bakend" imageSrc="/donuts.svg" />
       </div>
