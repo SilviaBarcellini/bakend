@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 7rem;
 }
 
 .btn {
@@ -16,7 +17,7 @@
   background-image: linear-gradient(
     to right,
     var(--gradient-1) 0%,
-    var(--secondary-color) 51%,
+    var(--gradient-2) 51%,
     var(--gradient-3) 100%
   );
   border: 1px solid;
@@ -72,7 +73,7 @@
 }
 
 .resultContainer {
-  background-color: var(--footer);
+  background-color: var(--solution);
   display: flex;
   text-align: center;
   margin: 1rem;
