@@ -155,7 +155,6 @@ export default function MainCard() {
           <h5>https://www.flaticon.com/</h5>
         </div>
       </div>
-      <Footer homeIcon="/home.svg" />
     </div>
   );
 }
