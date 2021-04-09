@@ -67,7 +67,7 @@ export default function SugarCalculator() {
         </div>
       </div>
 
-      <Footer homeIcon="/home.svg" favsIcon="/heartf.svg" />
+      <Footer homeIcon="/home.svg" />
     </div>
   );
 }
