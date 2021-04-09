@@ -9,7 +9,7 @@ export default function MainCard() {
     <div>
       <Head>
         <title>Explore</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/faviconnn.ico" />
       </Head>
       <div>
         <Header logo="bakend" imageSrc="/donuts.svg" />

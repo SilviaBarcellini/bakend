@@ -8,7 +8,7 @@ export default function Credits() {
     <div>
       <Head>
         <title>Credits</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/faviconnn.ico" />
       </Head>
       <div>
         <Header logo="bakend" imageSrc="/donuts.svg" />
