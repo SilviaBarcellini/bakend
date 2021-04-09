@@ -1,4 +1,4 @@
-import styles from "../styles/Form.module.css";
+import styles from "../styles/Credits.module.css";
 import Head from "next/head";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
@@ -15,8 +15,9 @@ export default function Credits() {
       </div>
       <div className={styles.container}>
         <div className={styles.credits}>
-          <h2>Icons</h2>
-          <ul>
+          <h1 className={styles.title}>Credits</h1>
+          <h2 className={styles.subtitle}>Icons</h2>
+          <ul className={styles.list}>
             <li>
               Icons made by
               <a href="https://www.freepik.com" title="Freepik">
@@ -154,10 +155,24 @@ export default function Credits() {
             </li>
           </ul>
 
-          <h2>Websites</h2>
-          <h5>https://www.allrecipes.com</h5>
-          <h5>https://www.nutritionvalue.org</h5>
-          <h5>https://www.flaticon.com/</h5>
+          <h2 className={styles.subtitle}>Websites</h2>
+          <ul className={styles.list}>
+            <li>
+              <a href="https://www.allrecipes.com" title="All Recipes">
+                https://www.allrecipes.com
+              </a>
+            </li>
+            <li>
+              <a href="https://www.nutritionvalue.org" title="Nutrition Values">
+                https://www.nutritionvalue.org
+              </a>
+            </li>
+            <li>
+              <a href="https://www.flaticon.com" title="Icons">
+                https://www.flaticon.com/
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <Footer homeIcon="/home.svg" />

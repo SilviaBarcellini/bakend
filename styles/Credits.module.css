@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  color: var(--secondary-color);
+  font-family: Poppins, sans-serif;
+}
+.subtitle {
+  color: var(--primary-color);
+  font-family: Poppins, sans-serif;
+}
+.list {
+  color: var(--secondary-color);
+  font-family: Poppins, sans-serif;
+}
