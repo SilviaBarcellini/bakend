@@ -17,12 +17,14 @@ function Theme() {
   }, [activeTheme]);
 
   return (
-    <button
-      onClick={() => setActiveTheme(inactiveTheme)}
-      className={`${styles.btn}`}
-    >
-      {inactiveTheme ? "🌈" : "🌈"}
-    </button>
+    <div className="button-container">
+      <button
+        onClick={() => setActiveTheme(inactiveTheme)}
+        className={`${styles.btn}`}
+      >
+        🍦 switch mode 🍫
+      </button>
+    </div>
   );
 }
 
