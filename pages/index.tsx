@@ -43,15 +43,15 @@ export default function Home() {
                 <Btn label="Explore 🦋" />
               </a>
             </Link>
-            <Link href="/MainCard">
+            <Link href="/Credits">
               <a>
-                <Btn label="Discover New Ingredients!" />
+                <Btn label="Credits 💘" />
               </a>
             </Link>
           </div>
         </div>
         <footer className={styles.footer}>
-          <Footer homeIcon="/home.svg" favsIcon="/heartf.svg" />
+          <Footer homeIcon="/home.svg" />
         </footer>
       </div>
     </div>
