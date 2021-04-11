@@ -66,7 +66,7 @@ export default function SugarCalculator() {
             <p className={styles.solution}>
               You can substitute <span className={styles.span}>{amount}</span>
               grams of butter with <span className={styles.span}>{total}</span>
-              of <span className={styles.span}>{toIng}</span>Happy baking!🧁
+              of {toIng}! Happy baking!🧁
             </p>
           )}
         </div>
