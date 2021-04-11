@@ -11,3 +11,10 @@
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
+
+.container {
+  background-color: var(--welcome);
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 5%;
+}
