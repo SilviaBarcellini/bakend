@@ -1,7 +1,6 @@
 import styles from "./footer.module.css";
 import Theme from "../dark/themeBtn";
 import Link from "next/link";
-import Btn from "../btn/btn";
 
 export type FooterProps = {
   homeIcon: string;
