@@ -9,12 +9,13 @@ export type FooterProps = {
 function Footer({ homeIcon }: FooterProps) {
   return (
     <footer className={styles.footer}>
-      <Theme />
       <Link href="/">
         <a>
           <img className={styles.home} src={homeIcon} alt="home" />
         </a>
       </Link>
+
+      <Theme />
     </footer>
   );
 }

@@ -19,6 +19,7 @@
     "build-server": "tsc --project tsconfig.server.json"
   },
   "dependencies": {
+    "lottie-react": "^2.1.0",
     "mongodb": "^3.6.5",
     "next": "10.0.8",
     "react": "17.0.1",

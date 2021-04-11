@@ -18,31 +18,33 @@ body[data-theme="light"] {
   --secondary-color: #7406c4;
   --background-color: #d1ffff;
   --color-bg-toggle: #2d255f;
-  --solution: #9ff4ff;
+  --solution: #77ffcb;
+  --welcome: #97f5ff;
   --button-main: #effeff;
   --gradient-1: #f723ff;
   --gradient-2: #6f22ff;
   --gradient-3: #fb23cd;
   --footer: #9ff4ff;
-  --switch-border: #460774;
-  --BG-switch: #25006b;
-  --color-switch: #9ff4ff;
+  --switch-border: #4e077e;
+  --BG-switch: #fb23cd;
+  --color-switch: #420983;
 }
 
 body[data-theme="dark"] {
   --primary-color: #ff00a7;
   --secondary-color: #d1ffff;
-  --background-color: #000;
+  --background-color: #060308;
   --color-bg-toggle: #00eaff;
-  --solution: #5b16aa;
+  --solution: #19052f78;
+  --welcome: #0e031ade;
   --button-main: #190120;
   --gradient-1: #2088ff;
   --gradient-2: #945aff;
   --gradient-3: #0084ff;
   --footer: #15011b;
-  --switch-border: #f723ff;
-  --BG-switch: #9ff4ff;
-  --color-switch: #cb1bd1;
+  --switch-border: #2df5c3;
+  --BG-switch: #601b8f;
+  --color-switch: #2df5c3;
 }
 
 a {

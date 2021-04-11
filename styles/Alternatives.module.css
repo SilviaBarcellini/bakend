@@ -61,8 +61,6 @@
 
 .span {
   margin: 1rem;
-  background-color: rgba(0, 191, 255, 0.787);
-  border-radius: 20%;
   padding: 0.2rem;
 }
 
@@ -76,9 +74,9 @@
   background-color: var(--solution);
   display: flex;
   text-align: center;
-  margin: 1rem;
+  margin: 2rem;
   padding: 1rem;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 
 .solution {

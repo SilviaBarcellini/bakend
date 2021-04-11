@@ -33,7 +33,7 @@ export default function SugarCalculator() {
     <div>
       <Head>
         <title>Butter Converter</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/faviconnn.ico" />
       </Head>
       <Header logo="bakend" imageSrc="/donuts.svg" />
       <div className={styles.container}>
@@ -66,7 +66,7 @@ export default function SugarCalculator() {
             <p className={styles.solution}>
               You can substitute <span className={styles.span}>{amount}</span>
               grams of butter with <span className={styles.span}>{total}</span>
-              of <span className={styles.span}>{toIng}</span>Happy baking!🧁
+              of {toIng}! Happy baking!🧁
             </p>
           )}
         </div>

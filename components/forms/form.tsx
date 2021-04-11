@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./form.module.css";
 import CardMain from "../cardMain/cardMain";
+import CardNot from "../card/card";
 
 function Search() {
   const [searchIng, setSearchIng] = useState("");
@@ -41,13 +42,19 @@ function Search() {
     <div className={styles.container}>
       <input
         className={styles.input}
-        placeholder="type here"
+        placeholder="looking for anything?"
         type="text"
         value={searchIng}
         onChange={(e) => handleChange(e.target.value)}
       />
       <div className={styles.cardMain}>
-        {ings.length === 0 && "No item found :("}
+        {ings.length === 0 && (
+          <CardNot
+            status="404"
+            title="oh nuts, no ingredients found!"
+            image="/ice-cream.svg"
+          />
+        )}
         {ings.map((ingredient) => (
           <CardMain
             key={ingredient.name}

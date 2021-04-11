@@ -16,10 +16,9 @@ export default function Home() {
             <title>Bakend</title>
             <link rel="icon" href="/faviconnn.ico" />
           </Head>
-          <main className={styles.main}></main>
-          <div>
-            <Greetings />
-          </div>
+
+          <Greetings />
+
           <div className={styles.calc}>
             <Link href="/Sugar">
               <a>
