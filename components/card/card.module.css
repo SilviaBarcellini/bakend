@@ -1,19 +1,18 @@
 .card {
-  max-width: 40%;
-  padding-top: 0.5rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: rgb(30, 31, 31);
   text-align: center;
   transition: 0.2s;
-  border: 3px solid #ff00a7;
+  border: 3px solid #ff006a;
   border-radius: 30%;
 }
 
 .card:hover {
-  border: 3px solid #6a00ff;
+  border: 3px solid #ff1010;
 }
 
 .image {
@@ -21,11 +20,21 @@
 }
 
 .title {
-  color: var(--secondary-color);
-  font-size: 1.125rem;
-  font-family: "Poppins", sans-serif;
+  color: #ff662a;
+  font-size: 1.5rem;
+  font-family: Paytone One, serif;
 }
 
 .title:hover {
-  color: #5d00df;
+  color: #ff1010;
+}
+
+.status {
+  color: #ff1010;
+  font-size: 5rem;
+  font-family: Paytone One, serif;
+}
+
+.status:hover {
+  color: #b81e1e;
 }
