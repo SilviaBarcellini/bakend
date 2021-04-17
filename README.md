@@ -1,34 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bakend 🍩
+
+[![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
+
+This is my capstone project for the [Neue Fische](https://www.neuefische.de/) Web Development Bootcamp I attended in Spring 2021
+
+Bakend is a baking ingredients converter app. Turned vegan? Or lactose intolerant? Or maybe just forgot to buy milk? Or just happy to experiment and give a personal twist to your cake recipes?
+
+Just type how much butter, sugar or milk you need according to your recipe and choose your favourite substitute. Bakend will do the maths for you! The result you get is calculated using the exchange rate of each ingredient.
+
+The ingredients are stored in a database. Type the name of the ingredient you are interested in in the search bar and you can search for You can also look ingredients and
+
+For a better experience use the mobile version, although it works in browser too.
 
 ## Getting Started
 
+To run locally, install the dependencies and run the development server.
 First, run the development server:
 
-```bash
+```shell
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
+Now you should be able to see the landing page.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Development
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Highlights
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- TypeScript
+- React
+- Next.js
+- mongoDB
+- Storybook
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+None!
+Just install all dependencies and you are good to go!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Setting up Dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Would you like to add features?
+Feel free to do it!
 
-## Deploy on Vercel
+```shell
+git clone git@github.com:SilviaBarcellini/bakend.git
+cd bakend
+npm install
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tests
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+No tests implemented yet.
+
+## Project Dependencies
+
+- https://nextjs.org/learn/excel/typescript
+- https://prettier.io/docs/en/install.html
+- https://eslint.org/docs/user-guide/getting-started
+- https://github.com/prettier/eslint-config-prettier
+- https://stylelint.io/user-guide/get-started
+- https://github.com/prettier/stylelint-config-prettier
+- https://typicode.github.io/husky/
+- https://github.com/okonet/lint-staged
+- https://storybook.js.org/docs/react/get-started/install
+- [Custom server for next](https://www.npmjs.com/package/storybook-css-modules-preset)
+- [Custom server for next](https://nextjs.org/docs/advanced-features/custom-server)
+- [TypeScript for custom server + nodemon](https://github.com/vercel/next.js/tree/canary/examples/custom-server-typescript)
+
+## Deployment
+
+The game is deployed on Heroku. Play it here: [Bakend](https://bakend-app.herokuapp.com/).
+For a better experience use the mobile version, although it works in browser too.
+
+## Library
+
+Icons from [flaticon](https://www.flaticon.com/).
+For extra info, please visit the Credits page of the App.
