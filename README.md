@@ -4,6 +4,8 @@
 
 This is my capstone project for the [Neue Fische](https://www.neuefische.de/) Web Development Bootcamp attended in Spring 2021
 
+<img src="public/Silvia_Barcellini_Bakend.gif"/>
+
 # Table of contents 📌
 
 - [Getting Started](#getting-started-🎉)
@@ -122,3 +124,5 @@ For more info, please visit the Credits page of the App.
 [(Back to top)](#table-of-contents-📌)
 
 Got anything to say? Please feel free to [contact me](https://www.linkedin.com/in/silvia-barcellini-abbb15207/)!
+
+<img src="public/silvia_barcellini_bakend.png" alt="bakend_landing_page"/>
