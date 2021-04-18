@@ -1,34 +1,131 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bakend 🍩
 
-## Getting Started
+[![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
 
+This is my capstone project for the [Neue Fische](https://www.neuefische.de/) Web Development Bootcamp attended in Spring 2021
+
+## 🎬 Demo
+
+<img src="public/Silvia_Barcellini_Bakend.gif"/>
+
+# 📌 Table of contents
+
+- [Demo](#🎬-demo)
+- [Getting Started](#🎉-getting-started)
+- [How it works](#📝-how-it-works)
+- [Development](#💻-development)
+  - [Highlights](#🌟-highlights)
+  - [Prerequisites](#✔️-prerequisites)
+  - [Contribute](#💞-contribute)
+- [Tests](#✅-tests)
+- [Project Dependencies](#➕-project-dependencies)
+- [Deployment](#🚀-deployment)
+- [Library](#📚-library)
+- [Contacts](#💌-contacts)
+
+## 🎉 Getting Started
+
+[(Back to top)](#📌-table-of-contents)
+
+To run locally, install the dependencies and run the development server.
 First, run the development server:
 
-```bash
+```shell
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Now you should be able to run it in your own device.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 📝 How it works
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+[(Back to top)](#📌-table-of-contents)
 
-## Learn More
+Bakend is a baking ingredients converter app. Turned vegan? Or lactose intolerant? Or maybe just forgot to buy milk? Or just happy to experiment and give a personal twist to your cake recipes?
 
-To learn more about Next.js, take a look at the following resources:
+There is a calculator page for each of the basic baking ingredients, such as butter, sugar and milk.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Just type how much butter, sugar or milk you need according to your recipe and choose among the available options your favourite substitute. Bakend will do the maths for you!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The result you get is calculated using the exchange rate of each ingredient.
 
-## Deploy on Vercel
+Would you like to know more of each ingredient stored in the database? Just visit the "Explore" page of the app. There you can type the name of the ingredient you are interested in. You will get the all the results from the directly from database. For each ingredient stored in the database there are nutrition facts and allergies warnings listed.
+(The app is for entertainment purposes only and never replaces a physician's advice.
+Please check the label of each product before you purchase it.)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💻 Development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[(Back to top)](#📌-table-of-contents)
+
+### 🌟 Highlights
+
+- TypeScript
+- React
+- Next.js
+- mongoDB
+- Storybook
+
+### ✔️ Prerequisites
+
+None!
+Just install all dependencies and you are good to go!
+
+### 💞 Contribute
+
+Would you like to contribute?
+Feel free to ✨ add features or 🐛 fix bugs!
+
+```shell
+git clone git@github.com:SilviaBarcellini/bakend.git
+cd bakend
+npm install
+npm run dev
+```
+
+## ✅ Tests
+
+[(Back to top)](#📌-table-of-contents)
+
+No tests implemented yet.
+
+## ➕ Project Dependencies
+
+[(Back to top)](#📌-table-of-contents)
+
+- https://nextjs.org/learn/excel/typescript
+- https://prettier.io/docs/en/install.html
+- https://eslint.org/docs/user-guide/getting-started
+- https://github.com/prettier/eslint-config-prettier
+- https://stylelint.io/user-guide/get-started
+- https://github.com/prettier/stylelint-config-prettier
+- https://typicode.github.io/husky/
+- https://github.com/okonet/lint-staged
+- https://storybook.js.org/docs/react/get-started/install
+- (https://www.npmjs.com/package/storybook-css-modules-preset)
+- [Custom server for next](https://nextjs.org/docs/advanced-features/custom-server)
+- [TypeScript for custom server + nodemon](https://github.com/vercel/next.js/tree/canary/examples/custom-server-typescript)
+
+## 🚀 Deployment
+
+[(Back to top)](#📌-table-of-contents)
+
+The game is deployed on Heroku. Play it here: [Bakend](https://bakend-app.herokuapp.com/).
+
+For a better experience use the mobile version, although it works in browser too.
+
+## 📚 Library
+
+[(Back to top)](#📌-table-of-contents)
+
+Icons from [flaticon](https://www.flaticon.com/).
+For more info, please visit the Credits page of the App.
+
+## 💌 Contacts
+
+[(Back to top)](#📌-table-of-contents)
+
+Got anything to say? Please feel free to [contact me](https://www.linkedin.com/in/silvia-barcellini)!
+
+<img src="public/silvia_barcellini_bakend.png" alt="bakend_landing_page"/>
