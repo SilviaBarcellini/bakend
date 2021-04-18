@@ -4,25 +4,28 @@
 
 This is my capstone project for the [Neue Fische](https://www.neuefische.de/) Web Development Bootcamp attended in Spring 2021
 
+## 🎬 Demo
+
 <img src="public/Silvia_Barcellini_Bakend.gif"/>
 
-# Table of contents 📌
+# 📌 Table of contents
 
-- [Getting Started](#getting-started-🎉)
-- [How it works](#how-it-works-📝)
-- [Development](#development-💻)
-  - [Highlights](#highlights-🌟)
-  - [Prerequisites](#prerequisites-✔️)
-  - [Contribute](#contribute-👥)
-- [Tests](#tests-✅)
-- [Project Dependencies](#project-dependencies-➕)
-- [Deployment](#deployment-🚀)
-- [Library](#library-📚)
-- [Contacts](#contacts-💌)
+- [Demo](#🎬-demo)
+- [Getting Started](#🎉-getting-started)
+- [How it works](#📝-how-it-works)
+- [Development](#💻-development)
+  - [Highlights](#🌟-highlights)
+  - [Prerequisites](#✔️-prerequisites)
+  - [Contribute](#💞-contribute)
+- [Tests](#✅-tests)
+- [Project Dependencies](#➕-project-dependencies)
+- [Deployment](#🚀-deployment)
+- [Library](#📚-library)
+- [Contacts](#💌-contacts)
 
-## Getting Started 🎉
+## 🎉 Getting Started
 
-[(Back to top)](#table-of-contents-📌)
+[(Back to top)](#📌-table-of-contents)
 
 To run locally, install the dependencies and run the development server.
 First, run the development server:
@@ -36,9 +39,9 @@ Open [http://localhost:3000](http://localhost:3000).
 
 Now you should be able to run it in your own device.
 
-## How it works 📝
+## 📝 How it works
 
-[(Back to top)](#table-of-contents-📌)
+[(Back to top)](#📌-table-of-contents)
 
 Bakend is a baking ingredients converter app. Turned vegan? Or lactose intolerant? Or maybe just forgot to buy milk? Or just happy to experiment and give a personal twist to your cake recipes?
 
@@ -52,11 +55,11 @@ Would you like to know more of each ingredient stored in the database? Just visi
 (The app is for entertainment purposes only and never replaces a physician's advice.
 Please check the label of each product before you purchase it.)
 
-## Development 💻
+## 💻 Development
 
-[(Back to top)](#table-of-contents-📌)
+[(Back to top)](#📌-table-of-contents)
 
-### Highlights 🌟
+### 🌟 Highlights
 
 - TypeScript
 - React
@@ -64,12 +67,12 @@ Please check the label of each product before you purchase it.)
 - mongoDB
 - Storybook
 
-### Prerequisites ✔️
+### ✔️ Prerequisites
 
 None!
 Just install all dependencies and you are good to go!
 
-### Contribute 👥
+### 💞 Contribute
 
 Would you like to contribute?
 Feel free to ✨ add features or 🐛 fix bugs!
@@ -81,15 +84,15 @@ npm install
 npm run dev
 ```
 
-## Tests ✅
+## ✅ Tests
 
-[(Back to top)](#table-of-contents-📌)
+[(Back to top)](#📌-table-of-contents)
 
 No tests implemented yet.
 
-## Project Dependencies ➕
+## ➕ Project Dependencies
 
-[(Back to top)](#table-of-contents-📌)
+[(Back to top)](#📌-table-of-contents)
 
 - https://nextjs.org/learn/excel/typescript
 - https://prettier.io/docs/en/install.html
@@ -104,25 +107,25 @@ No tests implemented yet.
 - [Custom server for next](https://nextjs.org/docs/advanced-features/custom-server)
 - [TypeScript for custom server + nodemon](https://github.com/vercel/next.js/tree/canary/examples/custom-server-typescript)
 
-## Deployment 🚀
+## 🚀 Deployment
 
-[(Back to top)](#table-of-contents-📌)
+[(Back to top)](#📌-table-of-contents)
 
 The game is deployed on Heroku. Play it here: [Bakend](https://bakend-app.herokuapp.com/).
 
 For a better experience use the mobile version, although it works in browser too.
 
-## Library 📚
+## 📚 Library
 
-[(Back to top)](#table-of-contents-📌)
+[(Back to top)](#📌-table-of-contents)
 
 Icons from [flaticon](https://www.flaticon.com/).
 For more info, please visit the Credits page of the App.
 
-## Contacts 💌
+## 💌 Contacts
 
-[(Back to top)](#table-of-contents-📌)
+[(Back to top)](#📌-table-of-contents)
 
-Got anything to say? Please feel free to [contact me](https://www.linkedin.com/in/silvia-barcellini-abbb15207/)!
+Got anything to say? Please feel free to [contact me](https://www.linkedin.com/in/silvia-barcellini)!
 
 <img src="public/silvia_barcellini_bakend.png" alt="bakend_landing_page"/>
